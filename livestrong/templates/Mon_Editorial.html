@@ -17,7 +17,8 @@
 */
 
     body {
-        -webkit-text-size-adjust: 100% !important;
+        /*-webkit-text-size-adjust: 100% !important;*/
+        -webkit-text-size-adjust: none !important;
         -ms-text-size-adjust: 100% !important;
         -webkit-font-smoothing: antialiased !important;
     }
@@ -91,11 +92,6 @@
             width: 300px !important;
             height: auto !important;
         }
-        img[class=em_mob_logo] {
-            width: 70% !important;
-            height: auto !important;
-        }
-
         td[class=em_pad_side] {
             padding-right: 12px !important;
             padding-left: 12px !important;
@@ -149,7 +145,6 @@
             width: 70% !important;
             height: auto !important;
         }
-
         td[class=em_pad_side] {
             padding-right: 12px !important;
             padding-left: 12px !important;
@@ -180,7 +175,7 @@
 
 <body style="margin:0px; padding:0px;" bgcolor="#efefef">
     <!-- LS Paste -->
-    {% assign utm_campaign = "DATE_GENDER_wed_editorial" %} 
+    {% assign utm_campaign = "DATE_GENDER_mon_editorial" %} 
     {% assign herourl = "" %} 
     {% assign twitterurl = "" %} 
     {% capture link1 %}{% endcapture %} 
@@ -194,8 +189,7 @@
     {% capture link2tag %}{% endcapture %} 
     {% capture link3tag %}{% endcapture %} 
     {% capture link4tag %}{% endcapture %} 
-    {% capture link5tag %}{% endcapture %} 
-    {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %}
+    {% capture link5tag %}{% endcapture %}
     <!-- /LS Paste -->
     <!-- Emailer Starts Here-->
     <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor="#efefef">
@@ -261,7 +255,7 @@
                     <table width="640" border="0" cellspacing="0" cellpadding="0" align="center" class="em_wrapper">
                         <tr>
                             <td valign="top" align="center">
-                                <a href="http://{{herourl}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image_hero" target="_blank" data-mp-url-id="2af10075e3faf669ef61ac4d7bf0508dacd68cd4" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/hero_GENDER.jpg" width="640" alt="Drinking Beer After a Workout: What Science Says" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase;" border="0" class="em_full_img"></a>
+                                <a href="http://{{herourl}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image_hero" target="_blank" data-mp-url-id="2af10075e3faf669ef61ac4d7bf0508dacd68cd4" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/hero_GENDER.jpg" width="640" alt="There IS a Magic Number of Meals Per Day for Weight Loss" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase;" border="0" class="em_full_img"></a>
                             </td>
                         </tr>
                         <tr>
@@ -280,7 +274,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:31px; text-align:center; font-weight:300;">
-                                                                    <a href="http://{{herourl}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline_hero" target="_blank" style="color:#2e2e30; text-decoration:none;" data-mp-url-id="bd4520020dab4a0fc6335da1de565c215a551e6f" mp-encode="true">Drinking Beer After a Workout: What Science Says</a>
+                                                                    <a href="http://{{herourl}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline_hero" target="_blank" style="color:#2e2e30; text-decoration:none;" data-mp-url-id="bd4520020dab4a0fc6335da1de565c215a551e6f" mp-encode="true">There IS a Magic Number of Meals Per Day for Weight Loss</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -288,16 +282,14 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:15px; text-align:center; font-weight:300;" class="small">
-                                                                    <a href="http://{{twitterurl}}" target="_blank" style="text-decoration:none;" data-mp-url-id="51c0c37619da542ecbdf86a8b8ba7aff1833265c" mp-encode="true"><span style="color:#b1b4b8;">By Lauren Bedosky</span></a> <span style="color:#b1b4b8;">  ·   Oct 03, 2018</span>
+                                                                    <a href="http://{{twitterurl}}" target="_blank" style="text-decoration:none;" data-mp-url-id="51c0c37619da542ecbdf86a8b8ba7aff1833265c" mp-encode="true"><span style="color:#b1b4b8;">By Esther Avant</span></a> <span style="color:#b1b4b8;">  ·   Oct 08, 2018</span>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td height="13" style="line-height:1px; font-size:1px;"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; text-align:center; color:#333333; font-weight:400;">
-                                                                    You may have noticed that, for some, beer has become a post-workout ritual. Where does this idea come from? And will it benefit you in any way? Here’s what the experts have to say.
-                                                                </td>
+                                                                <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; text-align:center; color:#333333; font-weight:400;">You’ve likely heard many recommendations about the amount of meals you should have per day — and even the time at which you should have them. Turns out, the amount of meals you REALLY need is dependent on you. What do we mean? Read on.</td>
                                                             </tr>
                                                             <tr>
                                                                 <td height="25" class="em_height"></td>
@@ -344,7 +336,7 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                                     <tr>
                                         <td valign="top" align="center">
-                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image1" target="_blank" data-mp-url-id="1e832247f25c0636830fd14bbb6b7dc9ef654aa1" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article1_GENDER.jpg" width="620" alt="10 Healthy Lunch Options That AREN’T Salad" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
+                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image1" target="_blank" data-mp-url-id="1e832247f25c0636830fd14bbb6b7dc9ef654aa1" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article1_GENDER.jpg" width="620" alt="These Surprising Foods Will Help Soothe Stress" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -359,7 +351,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:31px; text-align:center; font-weight:300;">
-                                                                    <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="e8032d0026fa5b03c4c8b35b0b2e80a0c3423013" mp-encode="true">10 Healthy Lunch Options That AREN’T Salad</a>
+                                                                    <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="e8032d0026fa5b03c4c8b35b0b2e80a0c3423013" mp-encode="true">These Surprising Foods Will Help <br class="hide">Soothe Stress</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -406,7 +398,7 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                                     <tr>
                                         <td valign="top" align="center">
-                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" target="_blank" data-mp-url-id="3e7f4597037c3b214220e9091a3b4b324f2ac511" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article2_GENDER.jpg" width="620" alt="Why Stand When You Can Do These Moves Sitting Down?" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
+                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" target="_blank" data-mp-url-id="3e7f4597037c3b214220e9091a3b4b324f2ac511" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article2_GENDER.jpg" width="620" alt="Keep the Push-Up Challenge Interesting With These Variations" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -421,7 +413,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:31px; text-align:center; font-weight:300;">
-                                                                    <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline2" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="65abc965132abc41adeb85b0c51e2691b3738a8e" mp-encode="true">Why Stand When You Can Do These Moves Sitting Down?</a>
+                                                                    <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline2" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="65abc965132abc41adeb85b0c51e2691b3738a8e" mp-encode="true">Keep the Push-Up Challenge Interesting With These Variations</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -468,7 +460,7 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                                     <tr>
                                         <td valign="top" align="center">
-                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" target="_blank" data-mp-url-id="16ad6b44c63d53a9649280f4d04e15d8436abb23" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article3_GENDER.jpg" width="620" alt="The Secrets to Making Carbs Less Fattening" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
+                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" target="_blank" data-mp-url-id="16ad6b44c63d53a9649280f4d04e15d8436abb23" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article3_GENDER.jpg" width="620" alt="Could Flamin’ Hot Cheetos Send You to the Hospital?" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -483,7 +475,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:31px; text-align:center; font-weight:300;">
-                                                                    <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="62990a05359b7633f56c61d0a171c235287140f0" mp-encode="true">The Secrets to Making Carbs Less Fattening</a>
+                                                                    <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="62990a05359b7633f56c61d0a171c235287140f0" mp-encode="true">Could Flamin’ Hot Cheetos Send You to <br class="hide">the Hospital?</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -530,7 +522,7 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                                     <tr>
                                         <td valign="top" align="center">
-                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" target="_blank" data-mp-url-id="ad63fc7566fa4a8a45ecf75d66b9717bde88ef76" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article4_GENDER.jpg" width="620" alt="The Piece of Gym Equipment That’s Dirtier Than a Toilet Seat" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
+                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" target="_blank" data-mp-url-id="ad63fc7566fa4a8a45ecf75d66b9717bde88ef76" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article4_GENDER.jpg" width="620" alt="How to INSTANTLY Sound More Professional" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -545,7 +537,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:31px; text-align:center; font-weight:300;">
-                                                                    <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline4" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="3c78c63ba92b32edd3e779aa0792086bd130d3db" mp-encode="true">The Piece of Gym Equipment That’s Dirtier Than a Toilet Seat</a>
+                                                                    <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline4" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="3c78c63ba92b32edd3e779aa0792086bd130d3db" mp-encode="true">How to INSTANTLY Sound More Professional</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -592,7 +584,7 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                                     <tr>
                                         <td valign="top" align="center">
-                                            <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image5" target="_blank" data-mp-url-id="0e7e0cee35580ea39a32a4531817f8234e550029" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article5_GENDER.jpg" width="620" alt="No-Sleaze Sex Retreats to Recharge Your Relationship" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
+                                            <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image5" target="_blank" data-mp-url-id="0e7e0cee35580ea39a32a4531817f8234e550029" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/editorial/DATE/article5_GENDER.jpg" width="620" alt="Monday Headache? How to Relieve It in 10 Minutes" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;" border="0" class="em_full_img"></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -607,7 +599,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:31px; text-align:center; font-weight:300;">
-                                                                    <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline5" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="c0f67c972159eca6ab8e9ba0a49cd4f4f77e4255" mp-encode="true">No-Sleaze Sex Retreats to Recharge <br class="hide">Your Relationship</a>
+                                                                    <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline5" target="_blank" style="color:#2e2e30;text-decoration:none;" class="heading" data-mp-url-id="c0f67c972159eca6ab8e9ba0a49cd4f4f77e4255" mp-encode="true">Monday Headache? How to Relieve It in <br class="hide">10 Minutes</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -656,13 +648,11 @@
                         <tr>
                             <td height="20" class="em_height"> </td>
                         </tr>
-                        <!--MyPlate Banner
-            
+                        <!--MAN Banner
                           <tr><td valign="top" align="center"><a data-add-tags="myplate_ad" href="http://hyperurl.co/jb8ci4" target="_blank" data-mp-url-id="07dcc2dab4bc31fbe2d6e920712fdccc30066973" mp-encode="false"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/ad_hoc/MyPlate_Email_Ad.png" width="620" alt="The Only Tool You Need to Get Fit and Strong" style="display:block; font-family:Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; color:#333333; font-weight:bold; text-transform:uppercase; text-align:center;margin-right: auto; margin-left: auto;" border="0" class="banner"></a></td></tr>
                           <tr>
                             <td height="20" class="em_height"> </td>
                           </tr>
-
                         -->
                         <!-- SECONDARY CONTENT PASTE -->
                         <!--Conversation-->
@@ -690,7 +680,7 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:22px; line-height:30px; text-align:center; font-weight:300;">
-                                                                                <a href="http://{{linkconvo}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline_conversation" target="_blank" style="color:#333333;text-decoration:none;" data-mp-url-id="bcb6fb655fb9c8669569e5ff7b3ea279159de6a3" mp-encode="true">Is Going Paleo Worth It?</a>
+                                                                                <a href="http://{{linkconvo}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline_conversation" target="_blank" style="color:#333333;text-decoration:none;" data-mp-url-id="bcb6fb655fb9c8669569e5ff7b3ea279159de6a3" mp-encode="true">How Many Eggs Is Too Many Eggs?</a>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
