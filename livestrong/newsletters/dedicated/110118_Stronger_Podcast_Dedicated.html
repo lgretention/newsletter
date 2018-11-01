@@ -62,6 +62,12 @@
         color: inherit !important;
         text-decoration: none !important;
     }
+    img.apple_button {
+        height: 44px;
+    }
+    img.google_button {
+        height: 62px;
+    }
 
     @media only screen and (min-width:480px) and (max-width:600px) {
         table[class=em_main_table] {
@@ -131,6 +137,10 @@
             font-size: 14px !important;
             line-height: 40px !important;
             width: 160px !important;
+        }
+        img.apple_button, img.google_button {
+            width: 80%;
+            height: 80%;
         }
     }
 
@@ -221,6 +231,10 @@
         span[class=em_brk] {
             display: block !important;
         }
+        img.apple_button, img.google_button {
+            width: 80%;
+            height: 80%;
+        }
     }
     </style>
 </head>
@@ -229,7 +243,7 @@
 margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100% !important;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color:#efefef; -webkit-font-smoothing: antialiased; " offset="0" topmargin="0" leftmargin="0" bgcolor="#efefef">
     {% assign utm_campaign = "102518_stronger_podcast_dedicated" %}
     {% capture link1 %}https://www.livestrong.com/article/13715628-your-brain-on-fats-with-dr-will-cole/{% endcapture %} 
-    {% capture link2 %}https://play.google.com/music/listen?u=0#/ps/Ivengqflc6t7ti6xfit33ccgwua{% endcapture %} 
+    {% capture link2 %}https://play.google.com/music/m/Ivengqflc6t7ti6xfit33ccgwua?t=Stronger{% endcapture %} 
     {% capture link3 %}https://itunes.apple.com/us/podcast/stronger/id1225470871?mt=2{% endcapture %} 
     {% capture link1tag %}podcast{% endcapture %} 
     {% capture link2tag %}podcast{% endcapture %} 
@@ -332,14 +346,14 @@ margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100% !important;-web
                                                                                     <td align="center">
                                                                                         <div>
                                                                                             <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:200px;" href="{{hero2url}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta_hero" arcsize="70%" stroke="f" fillcolor="#25c7d2"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="border-radius:35px;color:#ffffff;display:inline-block;font-family:Helvetica,Arial, sans-serif;font-size:21px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;" class="btncta" data-mp-url-id="180e3e41600b62c3c216288382970182c61b122d" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/ad_hoc/Google_Play_Badge.png" style="height: 62px;"></a>
+                                                                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="border-radius:35px;color:#ffffff;display:inline-block;font-family:Helvetica,Arial, sans-serif;font-size:21px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;" class="btncta" data-mp-url-id="180e3e41600b62c3c216288382970182c61b122d" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/ad_hoc/Google_Play_Badge.png" class="google_button"></a>
                                                                                             <!--[if mso]></center></v:roundrect><![endif]-->
                                                                                         </div>
                                                                                     </td>
                                                                                     <td align="center">
                                                                                         <div>
                                                                                             <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:200px;" href="{{hero2url}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta_hero" arcsize="70%" stroke="f" fillcolor="#25c7d2"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="border-radius:35px;color:#ffffff;display:inline-block;font-family:Helvetica,Arial, sans-serif;font-size:21px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;" class="btncta" data-mp-url-id="b6f848bda22dd4de00fc24480d97790f48ed6430" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/ad_hoc/Apple_Podcasts_Badge.png" style="height: 45px;"></a>
+                                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="border-radius:35px;color:#ffffff;display:inline-block;font-family:Helvetica,Arial, sans-serif;font-size:21px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;" class="btncta" data-mp-url-id="b6f848bda22dd4de00fc24480d97790f48ed6430" mp-encode="true"><img src="http://img.stitchcdn.com/livestrong/2018/scheduled/ad_hoc/Apple_Podcasts_Badge.png" class="apple_button"></a>
                                                                                             <!--[if mso]></center></v:roundrect><![endif]-->
                                                                                         </div>
                                                                                     </td>
