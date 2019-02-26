@@ -30,11 +30,6 @@ img {
     outline: none !important;
 }
 
-p {
-    Margin: 0px !important;
-    padding: 0px !important;
-}
-
 table {
     border-collapse: collapse;
     mso-table-lspace: 0px;
@@ -83,11 +78,19 @@ td[class=hero_content] {
     padding: 0 50px;
 }
 
+ul {
+    padding: 15px;
+}
+
 /*Stylesheed for the devices width between 481px to 599px*/
 @media only screen and (min-width:481px) and (max-width:699px) {
     *[class=wrapper] {
         width: 100% !important;
         min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 50% !important;
     }
 
     *[class=hide] {
@@ -165,6 +168,19 @@ td[class=hero_content] {
         padding: 0 50px;
         text-align: center;
     }
+
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=portrait] {
+        width: 60% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 100% !important;
+    }
 }
 
 /*Stylesheed for the devices width between 0px to 480px*/
@@ -172,6 +188,10 @@ td[class=hero_content] {
     *[class=wrapper] {
         width: 100% !important;
         min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 50% !important;
     }
 
     .mob_nopad {
@@ -264,22 +284,25 @@ td[class=hero_content] {
     td[class=hero_content] {
         padding: 0 35px;
     }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=portrait] {
+        width: 70% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 100% !important;
+    }
 }
 </style>
 
 <body>
     <!-- LS Paste -->
-    {% assign utm_campaign = "" %}
-    {% capture link1 %}https://www.hunker.com/13716922/introducing-hunker-house-our-new-irl-space{% endcapture %}
-    {% capture link2 %}https://www.hunker.com/13717237/these-plants-are-so-good-no-one-will-ever-believe-they-came-from-amazon{% endcapture %}
-    {% capture link3 %}https://www.hunker.com/13717112/add-drama-to-your-home-with-moody-floral-art-prints-free-downloads{% endcapture %}
-    {% capture link4 %}https://www.hunker.com/13716827/this-ikea-hack-uses-cane-to-turn-a-plain-cabinet-into-a-design-beauty{% endcapture %}
-    {% capture link5 %}https://www.hunker.com/13716915/these-white-kitchen-cabinet-ideas-speak-volumes{% endcapture %}
-    {% capture link1tag %}{% endcapture %}
-    {% capture link2tag %}{% endcapture %}
-    {% capture link3tag %}{% endcapture %}
-    {% capture link4tag %}{% endcapture %}
-    {% capture link5tag %}{% endcapture %}
+    {% assign utm_campaign = "editors_letter_march" %}
     <!-- /LS Paste -->
 <!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
     <table cellpadding="0" cellspacing="0" width="100%">
@@ -303,20 +326,20 @@ td[class=hero_content] {
                                 </tr>
                                 <!-- Header start -->
                                 <tr>
-                                    <td align="center" bgcolor="#F7F1E9">
+                                    <td align="center">
                                         <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                             {% if contact.email contains "@outlook" or contact.email contains "@hotmail" or contact.email contains "@live" or contact.email contains "@msn" or contact.email contains "@aol" %}
                                             <tr>
-                                                <td align="center" bgcolor="#F7F1E9" style="color:#808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding:15px 0;">Thank you for signing up for hunker newsletters when you visited our website. <br class="hide">If you no longer want to receive emails from us, please <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#808080;" data-mp-url-id="d9427312eab07ad49357b366b79e754cf4a48634" mp-encode="false">unsubscribe here</a>.</td>
+                                                <td align="center" style="color:#808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding:15px 0;">Thank you for signing up for hunker newsletters when you visited our website. <br class="hide">If you no longer want to receive emails from us, please <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#808080;" data-mp-url-id="d9427312eab07ad49357b366b79e754cf4a48634" mp-encode="false">unsubscribe here</a>.</td>
                                             </tr>
                                             {% endif %}
                                             <tr>
-                                                <td align="left" bgcolor="#F7F1E9" style="padding:50px 0 0 50px;">
+                                                <td align="left" style="padding:50px 0 0 50px;">
                                                     <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=logo" target="_blank" data-mp-url-id="bcc4de93b12ce419c25e5826ce1ccc949a9dffd0" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/hunker.png" alt="hunker" width="65" style="display:block;height:auto;border:0;"></a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="left" bgcolor="#F7F1E9" style="font-size:14px;font-family:'Helvetica',Arial,sans-serif;line-height:25px;color:#222222;padding:10px 0 20px 50px;">
+                                                <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:25px;color:#222222;padding:10px 0 20px 50px;">
                                                     Inspiration for the space around you.
                                                 </td>
                                             </tr>
@@ -334,17 +357,25 @@ td[class=hero_content] {
                                 <!-- Header end -->
                                 <tr>
                                     <td>
-                                        <!-- Content Section 1 -->
+                                        <!-- Content Start-->
                                         <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td>
                                                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
-                                                            <td height="50"></td>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                A Letter From Eve
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">
-                                                                <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image1" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/image1.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img"></a>
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/march/eve_epstein.png" width="400" alt="" style="display:block; height:auto;border:0;" border="0" class="portrait">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -354,29 +385,12 @@ td[class=hero_content] {
                                                             <td class="hero_content">
                                                                 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
-                                                                        <td align="left" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">Introducing Hunker House: <br class="hide">Our New IRL Space</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="left" bgcolor="#F7F1E9" style="font-size:14px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                            Welcome to Hunker House, our very own real-life space in Venice, California, where we get to bring our design obsessions, conversations, and ideas to life. From intimate shindigs and overnight guests to collaborations with beloved partners like Blu Dot, it's a spot for learning, creating, experimenting, and celebrating. (Also, it's everyone's new favorite place to do happy hour.)
-                                                                        </td>
-                                                                    </tr>
-                                                                    <!-- CTA -->
-                                                                    <tr>
-                                                                        <td align="center">
-                                                                            <table width="300" align="left" border="0" cellpadding="0" cellspacing="0">
-                                                                                <tr>
-                                                                                    <td align="left">
-                                                                                        <div>
-                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link1}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta1" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">TAKE THE TOUR</a>
-                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;padding-bottom: 25px;">
+                                                                            <p>Dear You Guys: I’m writing this, the first of our new monthly editor’s letters, in my favorite chair at Hunker House, our new IRL outpost in Venice Beach, California.</p>
+
+                                                                            <p>We created the space to answer a question that’s been on our minds: <strong>If Hunker were a house, what kind of house would it be?</strong> And, well, we couldn’t be happier with it. Hunker House not only embodies our love of beautiful, functional design, it’s also a place for storytelling, hosting, and collaborating with people and brands we love.</p>
+
+                                                                            <p>And we gave the space a good workout in February. We partnered with amazing folks like Blu Dot, Floyd, Hem, Armadillo, Ettitude, Year and Day, Poketo, and others. We celebrated Black History Month with a visit from Roe and E of <a href="https://www.instagram.com/brownkids/?hl=en" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">@brownkids</a> and an amazing panel featuring superstars Justina Blakeney, Cococozy, and Maurice Harris, moderated by Elvis Mitchell. <a href="https://www.instagram.com/stories/highlights/17881022089305648/?hl=en" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">We unboxed stuff.</a></p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -386,245 +400,104 @@ td[class=hero_content] {
                                                 </td>
                                             </tr>
                                         </table>
-                                        <!-- /Content Section 1 -->
-                                        <!-- Content Section 2 -->
                                         <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td height="80"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top">
-                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="250" height="225">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td valign="top">
-                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="250">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center"><a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="full_img" height="200" width="270" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/image2.png" style="display:block; max-width:200px; margin: 0 auto;"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="350">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="300" style="float:right;">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="right" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                                        <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline2" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">These Plants Are So Good, No One Will Ever Believe They Came From Amazon</a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="right" class="description" style="font-size:14px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                                        You know exactly what that lonely corner of your bedroom needs — a big green plant. We found a genius solution: Amazon Plant Store. We know, how did you not know about this sooner?
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center">
-                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
-                                                                                            <tr>
-                                                                                                <td align="center" class="description">
-                                                                                                    <div>
-                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link2}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta2" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                                        <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta2" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">PRIME PLANTS</a>
-                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- /Contect Section 2 -->
-                                        <!-- Content Section 3 -->
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td height="80"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top">
-                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="250" height="225">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td valign="top">
-                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="250">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center"><a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="full_img" height="200" width="270" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/image3.png" style="display:block; max-width:200px; margin: 0 auto;"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="350">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="300" style="float:right;">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                                        <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">Add Drama to Your Home With These Moody Floral Art Prints</a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="description" style="font-size:14px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                                        We predict we will see a lot more dark, saturated colors popping up in home decor — and what better way to do it than with flowers. 
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center">
-                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
-                                                                                            <tr>
-                                                                                                <td align="center" class="description">
-                                                                                                    <div>
-                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link3}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta3" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                                        <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta3" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">FREE DOWNLOADS</a>
-                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- /Content Section 3 -->
-                                        <!-- Content Section 4 -->
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td height="80"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top">
-                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="250" height="225">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td valign="top">
-                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="250">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center"><a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="full_img" height="200" width="270" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/image4.png" style="display:block; max-width:200px; margin: 0 auto;"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="350">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="300" style="float:right;">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="right" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                                        <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline4" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">This IKEA Hack Uses Cane to Turn a Plain Cabinet Into a <br class="hide">Design Beauty</a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="right" class="description" style="font-size:14px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                                        Do we love cane furniture? Hell yes. The usual price tag though? Mmmm, not so much. If you're looking for a statement piece on a budget, this clever IKEA hack might be the solution.
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="center">
-                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
-                                                                                            <tr>
-                                                                                                <td align="center" class="description">
-                                                                                                    <div>
-                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link4}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta4" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                                        <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta4" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">NO CANE, NO GAIN</a>
-                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- /Contect Section 4 -->
-                                        <!-- Contect Section 5 -->
-                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td height="80"></td>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="https://img.hunkercdn.com/715x/clsd/1/28/bad43b63c2a441ce8b9658600e4be9f9.jpg">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0"src="https://img.hunkercdn.com/715x/clsd/1/28/29990b2fc57b436498afcca145b7873b.jpg">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
                                             </tr>
+                                        </table>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td>
                                                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
-                                                            <td align="center">
-                                                                <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image5" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/image5.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img"></a>
+                                                            <td class="hero_content">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="50"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" width="10" bgcolor="#FADF86"></td>
+                                                                        <td align="left" width="25"></td>
+                                                                        <td align="center" class="quote" style="font-size:24px; font-weight:bold;line-height:26px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            "Hunker House not only embodies our love of beautiful, functional design, it’s also a place for storytelling, hosting, and collaborating with people and brands we love."
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;padding-bottom: 25px;">
+                                                                            <p>For more, check out the <a href="https://www.hunker.com/hunker-house?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Hunker House hub</a> for all the latest happenings, products, and guest stays.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
                                                             </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="50"></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="hero_content">
                                                                 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
-                                                                        <td align="right" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                            <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline5" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">These 12 White Kitchen Cabinet Ideas Speak Volumes</a>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            In Other News…
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td align="right" bgcolor="#F7F1E9" style="font-size:14px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                            White kitchen cabinets are kind of like classic cars, they never go out of style. Simply scroll through your Instagram feed, and you'll see a parade of bright, airy kitchens, all outfitted with gorgeous ivory-hued cabinetry. For your consideration, here are 12 attention-grabbing white kitchen cabinet ideas that will make your culinary space pop.
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;padding-bottom: 25px;">
+                                                                            <ul>
+                                                                                <li style="padding-bottom: 10px;">
+                                                                                    If you haven’t watched <strong><i>Russian Doll</i></strong>, please do that right away. Then read Leo’s <a href="https://www.hunker.com/13717397/how-russian-dolls-production-designer-created-a-mystery-dripping-in-maximalism?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">super-smart Q&A</a> with the show’s production designer, Michael Bricker, to learn more about the amazing interiors.
+                                                                                </li>
+                                                                                <li style="padding-bottom: 10px;">
+                                                                                    Landscape architect <strong><i>Mia Lehrer</i></strong> is a one-of-a-kind lady whose vision is evident throughout the Los Angeles area, from stadiums to parks to the L.A. River. <a href="https://www.hunker.com/13715550/architect-of-impact-mia-lehrer?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Deanna’s interview with her</a> is charming, whip-smart, and inspiring.
+                                                                                </li>
+                                                                                <li style="padding-bottom: 10px;">
+                                                                                    Any fan of design felt the loss of <strong><i>Karl Lagerfeld</i></strong> last month. Did you know he’d also recently branched out into home design with a limited-edition collection of neoclassical/postmodern/very heavy-looking pieces crafted from rare marble? <a href="https://www.architecturaldigest.com/story/karl-lagerfeld-marble-furniture-carpenters-workshop-paris" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Architectural Digest first told us of it</a> in October.
+                                                                                </li>
+                                                                                <li style="padding-bottom: 10px;">
+                                                                                    Apropos of nothing: After re-watching <strong><i>Crazy Rich Asians</i></strong> for the 5th time, I re-read China Rich Girlfriend, because preparedness. And for those of you who, like me, wonder if the Baos’ drive-in car elevator is a thing in real life, It <a href="https://www.youtube.com/watch?v=GV69G5v-A7g" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">totally is</a>.
+                                                                                </li>
+                                                                                <li style="padding-bottom: 10px;">
+                                                                                    Finally, for all you <strong><i>Scandi-heads</i></strong> (read: EVERYONE), we’ve launched <a href="https://www.hunker.com/scandi-land?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Scandi-land</a>, a hub dedicated to brands, homes, topics, and news about Scandinavian design. Have at it, and check back for updates. You’re welcome.
+                                                                                </li>
+                                                                            </ul>
                                                                         </td>
                                                                     </tr>
-                                                                    <!-- CTA -->
                                                                     <tr>
-                                                                        <td align="center">
-                                                                            <table width="300" align="right" border="0" cellpadding="0" cellspacing="0">
-                                                                                <tr>
-                                                                                    <td align="left">
-                                                                                        <div>
-                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link5}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta5" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link5tag}}" href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta5" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">TIME TO RENO</a>
-                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;padding-bottom: 25px;">
+                                                                            <p>That’s all for now. Happy March!</p>
+                                                                            <p>Xx Eve</p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -633,8 +506,7 @@ td[class=hero_content] {
                                                     </table>
                                                 </td>
                                             </tr>
-                                        </table>
-                                        <!-- /Contect Section 5 -->
+                                        </table>  
                                     </td>
                                 </tr>
                                 <!--Content end-->
