@@ -78,10 +78,6 @@ td[class=hero_content] {
     padding: 0 50px;
 }
 
-ul {
-    padding: 15px;
-}
-
 /*Stylesheed for the devices width between 481px to 599px*/
 @media only screen and (min-width:481px) and (max-width:699px) {
     *[class=wrapper] {
@@ -153,6 +149,10 @@ ul {
 
     .description {
         padding: 0 50px;
+        text-align: center;
+    }
+
+    td[class=h1] {
         text-align: center;
     }
 }
@@ -248,10 +248,11 @@ ul {
 
     td[class=h1] {
         font-size: 28px !important;
+        text-align: center;
     }
 
     .description {
-        padding: 0 50px;
+        padding: 0 35px;
         text-align: center;
     }
 }
@@ -259,11 +260,10 @@ ul {
 
 <body>
     {% assign utm_campaign = "hunker_welcome" %}
-    {% capture link1 %}https://www.bludot.com{% endcapture %} 
-    {% capture link2 %}https://www.bludot.com{% endcapture %} 
-    {% capture link3 %}https://www.bludot.com{% endcapture %} 
-    {% capture link4 %}https://www.bludot.com{% endcapture %} 
-    {% capture link5 %}https://www.bludot.com{% endcapture %} 
+    {% capture link1 %}https://www.hunker.com/tours{% endcapture %} 
+    {% capture link2 %}https://www.hunker.com/features{% endcapture %} 
+    {% capture link3 %}https://www.hunker.com/news{% endcapture %} 
+    {% capture link4 %}https://www.hunker.com/design{% endcapture %} 
 <!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
     <table cellpadding="0" cellspacing="0" width="100%">
         <tr>
@@ -367,7 +367,7 @@ ul {
                                         <!-- Tours -->
                                         <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                                             <tr>
-                                                <td height="50"></td>
+                                                <td class="hide" height="50"></td>
                                             </tr>
                                             <tr>
                                                 <td>
@@ -377,7 +377,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a href="http://{{link1}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image1" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="https://img.hunkercdn.com/1440x/clsd/1/28/4ebae21aa2f94e5dba109f3f4ebc15ca.jpg">
                                                                             </a>
                                                                         </td>
@@ -397,8 +397,8 @@ ul {
                                                                         <td height="25"></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td align="left" class="h1, description" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
-                                                                            <a href="http://{{link1}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 Tours
                                                                             </a>
                                                                         </td>
@@ -428,7 +428,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a href="http://{{link2}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="https://img.hunkercdn.com/1440x/clsd/5/29/3a85eb0b4319407bbce4d968602619a1.jpg">
                                                                             </a>
                                                                         </td>
@@ -448,8 +448,8 @@ ul {
                                                                         <td height="25"></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td align="left" class="h1, description" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
-                                                                            <a href="http://{{link2}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline2" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 Features
                                                                             </a>
                                                                         </td>
@@ -479,7 +479,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/news.jpg">
                                                                             </a>
                                                                         </td>
@@ -499,8 +499,8 @@ ul {
                                                                         <td height="25"></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td align="left" class="h1, description" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
-                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 News
                                                                             </a>
                                                                         </td>
@@ -530,7 +530,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="https://img.hunkercdn.com/default/clsd/2/15/fb3d1493fe484fab975076bcd9df97a9.jpg">
                                                                             </a>
                                                                         </td>
@@ -550,8 +550,8 @@ ul {
                                                                         <td height="25"></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td align="left" class="h1, description" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
-                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline4" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 Design
                                                                             </a>
                                                                         </td>
@@ -585,15 +585,12 @@ ul {
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td height="15"></td>
+                                                            <td height="25"></td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">
                                                                 <img src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/insta.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
                                                             </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="35"></td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -602,7 +599,7 @@ ul {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="50"></td>
+                                    <td class="hide" height="50"></td>
                                 </tr>
                             </table>
                         </td>
