@@ -43,6 +43,39 @@ span {
     mso-line-height-rule: exactly;
 }
 
+p {
+    font-size: 15px;
+    font-family:'Helvetica',Arial,sans-serif;
+    line-height: 22px;
+    color: #222222;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    color:#222222;
+    margin: 0;
+}
+
+h2 {
+    font-size:24px;
+    font-weight:bold;
+    line-height:26px;
+    font-family:'Times New Roman', Times, 
+    serif;color:#222222;
+    margin: 0;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: normal;
+    font-family:'Times New Roman', Times, serif;
+    color:#222222;
+    margin: 10px 0;
+}
+
 .ExternalClass * {
     line-height: 100%;
 }
@@ -82,6 +115,14 @@ ul {
     padding: 15px;
 }
 
+td[class=logo] {
+    padding: 50px 0 0 50px;
+}
+
+td[class=tagline] {
+    padding-left: 50px;
+}
+
 /*Stylesheed for the devices width between 481px to 599px*/
 @media only screen and (min-width:481px) and (max-width:699px) {
     *[class=wrapper] {
@@ -99,10 +140,6 @@ ul {
 
     td[class=mob_pad] {
         padding: 0 12px !important;
-    }
-
-    td[class=h20] {
-        height: 15px !important;
     }
 
     table[class=nav] {
@@ -174,12 +211,24 @@ ul {
         font-size: 14px !important;
     }
 
-    td[class=mob_pad] {
-        padding: 0 12px !important;
+<<<<<<< HEAD
+=======
+    h1 {
+        font-size: 28px;
     }
 
-    td[class=h20] {
-        height: 15px !important;
+    h2 {
+        font-size:20px;
+        line-height:22px;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
+    td[class=mob_pad] {
+        padding: 0 12px !important;
     }
 
     table[class=nav] {
@@ -222,22 +271,33 @@ ul {
         padding: 0 35px;
     }
 
-    td[class=quote] {
-        font-size: 20px !important;
-        line-height: 22px !important;
-    }
-
     img[class=portrait] {
         width: 60% !important;
     }
 
     img[class=two_col_image] {
         width: 95%;
+<<<<<<< HEAD
     }
 
     td[class=logo] {
         padding: 50px 0 0 35px;
+=======
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
     }
+
+    td[class=logo] {
+        padding: 35px 0 0 35px;
+    }
+
+    td[class=tagline] {
+        padding-left: 35px;
+    }
+
+    td[class=portrait_spacer] {
+        height: 25px;
+    }
+
 }
 </style>
 
@@ -255,11 +315,21 @@ ul {
                 </o:OfficeDocumentSettings>
                 </xml>
                 <![endif]-->
+<<<<<<< HEAD
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F1E9">
+=======
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                     <tr>
                         <td align="center" valign="top">
                             <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
                                 <tr>
+<<<<<<< HEAD
+=======
+                                    <td class="hide" height="1" style="line-height:0px; font-size:0px;"><img src="http://img.stitchcdn.com/ehow/2016/triggered/social_nav/spacer.gif" height="1" width="640" alt="" style="display:block; width:640px; min-width:640px;" border="0"></td>
+                                </tr>
+                                <tr>
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                     <td align="center">
                                         <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                             {% if contact.email contains "@outlook" or contact.email contains "@hotmail" or contact.email contains "@live" or contact.email contains "@msn" or contact.email contains "@aol" %}
@@ -268,13 +338,22 @@ ul {
                                             </tr>
                                             {% endif %}
                                             <tr>
+<<<<<<< HEAD
                                                 <td align="left" class="logo" style="padding:50px 0 0 50px;">
+=======
+                                                <td align="left" class="logo">
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                                     <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=logo" target="_blank" data-mp-url-id="bcc4de93b12ce419c25e5826ce1ccc949a9dffd0" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2019/ad_hoc/thuan_test/hunker.png" alt="hunker" width="65" style="display:block;height:auto;border:0;"></a>
                                                 </td>
                                             </tr>
                                             <tr>
+<<<<<<< HEAD
                                                 <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:25px;color:#222222;padding:10px 0 0 50px;">
                                                     Inspiration for the space around you.
+=======
+                                                <td align="left" class="tagline">
+                                                    <p>Inspiration for the space around you.</p>
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                                 </td>
                                             </tr>
                                         </table>
@@ -287,6 +366,7 @@ ul {
                                                 <td>
                                                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
+<<<<<<< HEAD
                                                             <td height="35"></td>
                                                         </tr>
                                                         <tr>
@@ -305,12 +385,38 @@ ul {
                                                         </tr>
                                                         <tr>
                                                             <td height="35"></td>
+=======
+                                                            <td height="35" class="portrait_spacer"></td>
                                                         </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <h1>A Letter From Eve</h1>
+                                                                <h3>ISSUE NO. 1</h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="35" class="portrait_spacer"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/march/eve_epstein.png" width=320" alt="" style="display:block; height:auto;border:0;" border="0" class="portrait">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="35" class="portrait_spacer"></td>
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
+                                                        </tr>
+                                                    </table>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
                                                             <td class="hero_content">
                                                                 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;">
+=======
+                                                                        <td align="left">
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                                                             <p>Dear You Guys: I’m writing this, the first of our new monthly editor’s letters, in my favorite chair at Hunker House, our new IRL outpost in Venice Beach, California.</p>
 
                                                                             <p>We created the space to answer a question that’s been on our minds: <strong>If Hunker were a house, what kind of house would it be?</strong> And, well, we couldn’t be happier with it. Hunker House not only embodies our love of beautiful, functional design, it’s also a place for storytelling, hosting, and collaborating with people and brands we love.</p>
@@ -319,7 +425,11 @@ ul {
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td height="50"></td>
+=======
+                                                                        <td height="35"></td>
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                                                     </tr>
                                                                 </table>
                                                             </td>
@@ -373,8 +483,8 @@ ul {
                                                                     <tr>
                                                                         <td align="left" width="10" bgcolor="#FADF86"></td>
                                                                         <td align="left" width="25"></td>
-                                                                        <td align="center" class="quote" style="font-size:24px; font-weight:bold;line-height:26px;font-family:'Times New Roman', Times, serif;color:#222222;">
-                                                                            "Hunker House not only embodies our love of beautiful, functional design, it’s also a place for storytelling, hosting, and collaborating with people and brands we love."
+                                                                        <td align="center">
+                                                                            <h2>"Hunker House not only embodies our love of beautiful, functional design, it’s also a place for storytelling, hosting, and collaborating with people and brands we love."</h2>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -383,7 +493,11 @@ ul {
                                                                 </table>
                                                                 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;">
+=======
+                                                                        <td align="left">
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                                                             <p>For more, check out the <a href="https://www.hunker.com/hunker-house?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Hunker House hub</a> for all the latest happenings, products, and guest stays.</p>
                                                                         </td>
                                                                     </tr>
@@ -394,6 +508,9 @@ ul {
                                                             </td>
                                                         </tr>
                                                         <tr>
+                                                            <td height="35"></td>
+                                                        </tr>
+                                                        <tr>
                                                             <td>
                                                                 <img src="https://img.hunkercdn.com/1440x/clsd/1/28/bb9859ea71a2402db1d8ee35cef29539.jpg" width="640" class="full_img" alt="" style="display:block; height:auto;border:0;" border="0" >
                                                             </td>
@@ -402,9 +519,10 @@ ul {
                                                             <td class="hero_content">
                                                                 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
-                                                                        <td height="50"></td>
+                                                                        <td height=50></td>
                                                                     </tr>
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td align="center" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
                                                                             In Other News…
                                                                         </td>
@@ -435,6 +553,34 @@ ul {
                                                                     </tr>
                                                                     <tr>
                                                                         <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;color:#222222;">
+=======
+                                                                        <td align="center">
+                                                                            <h1>In Other News…</h1>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height=25></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <p>If you haven’t watched <strong><i>Russian Doll</i></strong>, please do that right away. Then read Leo’s <a href="https://www.hunker.com/13717397/how-russian-dolls-production-designer-created-a-mystery-dripping-in-maximalism?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">super-smart Q&A</a> with the show’s production designer, Michael Bricker, to learn more about the amazing interiors.</p>
+                                                                        
+                                                                        
+                                                                            <p>Landscape architect <strong><i>Mia Lehrer</i></strong> is a one-of-a-kind lady whose vision is evident throughout the Los Angeles area, from stadiums to parks to the L.A. River. <a href="https://www.hunker.com/13715550/architect-of-impact-mia-lehrer?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Deanna’s interview with her</a> is charming, whip-smart, and inspiring.</p>
+                                                                        
+                                                                        
+                                                                            <p>Any fan of design felt the loss of <strong><i>Karl Lagerfeld</i></strong> last month. Did you know he’d also recently branched out into home design with a limited-edition collection of neoclassical/postmodern/very heavy-looking pieces crafted from rare marble? <a href="https://www.architecturaldigest.com/story/karl-lagerfeld-marble-furniture-carpenters-workshop-paris" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Architectural Digest first told us of it</a> in October.</p>
+                                                                        
+                                                                        
+                                                                            <p>Apropos of nothing: After re-watching <strong><i>Crazy Rich Asians</i></strong> for the 5th time, I re-read China Rich Girlfriend, because preparedness. And for those of you who, like me, wonder if the Baos’ drive-in car elevator is a thing in real life, it <a href="https://www.youtube.com/watch?v=GV69G5v-A7g" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">totally is</a>.</p>
+                                                                        
+                                                                        
+                                                                            <p>Finally, for all you <strong><i>Scandi-heads</i></strong> (read: EVERYONE), we’ve launched <a href="https://www.hunker.com/scandi-land?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Scandi-land</a>, a hub dedicated to brands, homes, topics, and news about Scandinavian design. Have at it, and check back for updates. You’re welcome.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left">
+>>>>>>> 3969f0d8457a3e4a952523c76660e4fc61ac574f
                                                                             <p>That’s all for now. Happy March!</p>
                                                                             <p>Xx Eve</p>
                                                                         </td>
