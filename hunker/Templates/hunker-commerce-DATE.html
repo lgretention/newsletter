@@ -172,6 +172,10 @@ ul {
         width: 100% !important;
     }
 
+    *[class=hide] {
+        display: none !important;
+    }
+
     .mob_nopad {
         padding-bottom: 0 !important;
     }
@@ -263,11 +267,11 @@ ul {
 
 <body>
     {% assign utm_campaign = "deals_DATE" %}
-    {% capture link1 %}{% endcapture %} 
-    {% capture link2 %}{% endcapture %} 
-    {% capture link3 %}{% endcapture %} 
-    {% capture link4 %}{% endcapture %} 
-    {% capture link5 %}{% endcapture %} 
+    {% capture link1 %}https://www.bludot.com{% endcapture %} 
+    {% capture link2 %}https://www.bludot.com{% endcapture %} 
+    {% capture link3 %}https://www.bludot.com{% endcapture %} 
+    {% capture link4 %}https://www.bludot.com{% endcapture %} 
+    {% capture link5 %}https://www.bludot.com{% endcapture %} 
 <!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
     <table cellpadding="0" cellspacing="0" width="100%">
         <tr>
@@ -343,7 +347,7 @@ ul {
                                                                     </tr>
                                                                     <tr>
                                                                         <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:16px;color:#7A7A7A;">
-                                                                            Our editorial team recommends the products we write about.<br>
+                                                                            Our editorial team recommends the products we write about.<br class="hide">
                                                                             Hunker may earn compensation through affiliate links in this story.
                                                                         </td>
                                                                     </tr>
@@ -382,7 +386,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image1" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a href="http://{{link1}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="225" alt="" style="display:block; height:auto;border:0;" border="0" src="https://res-4.cloudinary.com/dwpujv6in/image/upload/c_pad,dpr_2.0,f_auto,h_322,q_auto,w_322/v1/media/catalog/product/f/d/fd1_lngchr_bh_frontlow-field-lounge-chair-tait-blush_2.jpg">
                                                                             </a>
                                                                         </td>
@@ -400,7 +404,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                            <a href="http://{{link1}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 <strong>Brand Name</strong>
                                                                                 Product<br>
                                                                                 $1,000
@@ -416,10 +420,10 @@ ul {
                                                                         <td align="center">
                                                                             <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                                 <tr>
-                                                                                    <td align="center" class="description">
+                                                                                    <td align="center"">
                                                                                         <div>
-                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link1}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta1" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:300px;" href="{{link1}}" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="http://{{link1}}" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
                                                                                             <!--[if mso]></center></v:roundrect><![endif]-->
                                                                                         </div>
                                                                                     </td>
@@ -447,7 +451,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a href="http://{{link2}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="225" alt="" style="display:block; height:auto;border:0;" border="0" src="https://res-2.cloudinary.com/dwpujv6in/image/upload/c_pad,dpr_2.0,f_auto,h_322,q_auto,w_322/v1/media/catalog/product/b/y/by1_smotto_ca_3.jpg">
                                                                             </a>
                                                                         </td>
@@ -465,7 +469,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="right" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline2" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                            <a href="http://{{link2}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 <strong>Brand Name</strong>
                                                                                 Product<br>
                                                                                 $1,000
@@ -481,10 +485,10 @@ ul {
                                                                         <td align="center">
                                                                             <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                                 <tr>
-                                                                                    <td align="center" class="description">
+                                                                                    <td align="center"">
                                                                                         <div>
-                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link2}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta2" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta2" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:300px;" href="{{link2}}" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="http://{{link2}}" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
                                                                                             <!--[if mso]></center></v:roundrect><![endif]-->
                                                                                         </div>
                                                                                     </td>
@@ -512,7 +516,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="225" alt="" style="display:block; height:auto;border:0;" border="0" src="https://res-3.cloudinary.com/dwpujv6in/image/upload/c_pad,dpr_2.0,f_auto,h_322,q_auto,w_322/v1/media/catalog/product/t/n/tn1_coffee_wd_l_turn-coffee-table.jpg">
                                                                             </a>
                                                                         </td>
@@ -530,7 +534,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 <strong>Brand Name</strong>
                                                                                 Product<br>
                                                                                 $1,000
@@ -546,10 +550,10 @@ ul {
                                                                         <td align="center">
                                                                             <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                                 <tr>
-                                                                                    <td align="center" class="description">
+                                                                                    <td align="center"">
                                                                                         <div>
-                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link3}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta3" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta2" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:300px;" href="{{link3}}" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
                                                                                             <!--[if mso]></center></v:roundrect><![endif]-->
                                                                                         </div>
                                                                                     </td>
@@ -577,7 +581,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="left">
-                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
+                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true">
                                                                                 <img class="two_col_image" width="225" alt="" style="display:block; height:auto;border:0;" border="0" src="https://res-5.cloudinary.com/dwpujv6in/image/upload/c_pad,dpr_2.0,f_auto,h_322,q_auto,w_322/v1/media/catalog/product/t/r/tr1_lchair_sk_side-toro-lounge-chair-chocolate-smoke_1.jpg">
                                                                             </a>
                                                                         </td>
@@ -595,7 +599,7 @@ ul {
                                                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                     <tr>
                                                                         <td align="right" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline4" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
+                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">
                                                                                 <strong>Brand Name</strong>
                                                                                 Product<br>
                                                                                 $1,000
@@ -611,10 +615,10 @@ ul {
                                                                         <td align="center">
                                                                             <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
                                                                                 <tr>
-                                                                                    <td align="center" class="description">
+                                                                                    <td align="center"">
                                                                                         <div>
-                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link4}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta4" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
-                                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta4" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:300px;" href="{{link4}}" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a data-add-tags="{{link4tag}}" href="http://{{link4}}" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SHOP NOW</a>
                                                                                             <!--[if mso]></center></v:roundrect><![endif]-->
                                                                                         </div>
                                                                                     </td>
@@ -632,7 +636,7 @@ ul {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="35"></td>
+                                    <td height="50"></td>
                                 </tr>
                             </table>
                         </td>
