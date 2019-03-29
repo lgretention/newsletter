@@ -74,11 +74,19 @@ span.MsoHyperlinkFollowed {
     mso-hide: all;
 }
 
+ul {
+    padding-left: 20px;
+}
+
 /*Stylesheed for the devices width between 481px to 599px*/
 @media only screen and (min-width:481px) and (max-width:699px) {
     *[class=wrapper] {
         width: 100% !important;
         min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 50% !important;
     }
 
     *[class=hide] {
@@ -129,14 +137,17 @@ span.MsoHyperlinkFollowed {
         height: auto !important;
     }
 
-    .description {
-        padding: 0 50px;
-        text-align: center;
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=portrait] {
+        width: 50% !important;
     }
 
     img[class=two_col_image] {
-        width: 40%;
-        margin: 0 auto;
+        width: 95%;
     }
 }
 
@@ -149,6 +160,10 @@ span.MsoHyperlinkFollowed {
 
     *[class=hide] {
         display: none !important;
+    }
+
+    *[class=two_col] {
+        width: 50% !important;
     }
 
     .mob_nopad {
@@ -203,13 +218,21 @@ span.MsoHyperlinkFollowed {
         height: auto !important;
     }
 
-    .description {
-        padding: 0 35px;
-        text-align: center;
-    }
-
     td[class=hero_content] {
         padding: 0 35px !important;
+    }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=portrait] {
+        width: 60% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 95%;
     }
 
     td[class=logo] {
@@ -224,11 +247,6 @@ span.MsoHyperlinkFollowed {
         font-size: 28px !important;
     }
 
-    img[class=two_col_image] {
-        width: 40%;
-        margin: 0 auto;
-    }
-
     img[class=h_logo] {
         width: 40px;
     }
@@ -236,6 +254,7 @@ span.MsoHyperlinkFollowed {
     td[class=logo_padding] {
         height: 25px !important;
     }
+
 }
 </style>
 
@@ -276,7 +295,7 @@ span.MsoHyperlinkFollowed {
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td height="30"" class="logo_padding"></td>
+                                                <td height="30" class="logo_padding"></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -288,15 +307,15 @@ span.MsoHyperlinkFollowed {
                                                 <td>
                                                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
-                                                            <td height="50"></td>
+                                                            <td height="15"></td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">
-                                                                <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/march/eve3.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/april/hero.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td height="50"></td>
+                                                            <td height="35"></td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
@@ -316,12 +335,126 @@ span.MsoHyperlinkFollowed {
 
                                                                             <p>I’m no stranger to the internet rabbit hole. For me, it usually starts with an innocuous article about animals having feelings, pops over to a makeup review or 12, and then...suddenly it’s three hours later and I’m watching a 26-minute YouTube video about ingrown toenails or extreme chiropracty, empathizing silently with the horrified commenter whose “HOW DID I GET HERE? WHY GOD WHY?” is, at some point, all of us.</p>
 
-                                                                            <p>But on a recent morning, I found myself appreciating the web’s twisty pathways. I was reading an <a href="https://la.curbed.com/2019/3/20/18264802/paul-williams-architect-biography-homes-pictures" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">article/photo</a> essay on Curbed about the great midcentury architect Paul R. Williams, the first African-American member of the AIA, by photographer Janna Ireland. From there, I found my way to the New York Times’s belated <a href="https://www.nytimes.com/2019/03/06/obituaries/julia-morgan-overlooked.html" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">obituary for Julia Morgan</a>, the first woman to earn an architect’s license in California — part of the Times’s “Overlooked” series, which celebrates the lives of remarkable people whose deaths were initially unmarked by the paper. And on to another piece in the same series, about Lilian Rice, another groundbreaking, California-based female architect.</p>
+                                                                            <p>But on a recent morning, I found myself appreciating the web’s twisty pathways. I was reading an <a href="https://la.curbed.com/2019/3/20/18264802/paul-williams-architect-biography-homes-pictures" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">article/photo</a> essay on Curbed about the great midcentury architect Paul R. Williams, the first African-American member of the AIA, by photographer Janna Ireland.</p>
 
+                                                                            <p>From there, I found my way to the New York Times’s belated <a href="https://www.nytimes.com/2019/03/06/obituaries/julia-morgan-overlooked.html" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">obituary for Julia Morgan</a>, the first woman to earn an architect’s license in California — part of the Times’s “Overlooked” series, which celebrates the lives of remarkable people whose deaths were initially unmarked by the paper. And on to another piece in the same series, about Lilian Rice, another groundbreaking, California-based female architect.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" width="10" bgcolor="#FADF86"></td>
+                                                                        <td align="left" width="25"></td>
+                                                                        <td align="center" class="quote" style="font-size:24px; font-weight:bold;line-height:26px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            "Part of our job is to find and tell the stories — present and past — that may have gotten lost or overshadowed."
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="35"></td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
                                                                             <p>Part of our job is to find and tell the stories — present and past — that may have gotten lost or overshadowed. I love when we find ways to do this at Hunker, whether it’s a Q&A with Kat Holmes, Director of UX Design at Google, who talks about the importance of designing inclusive spaces and products for all, including those with disabilities; a <a href="https://www.hunker.com/13717382/the-untold-history-of-the-iconic-wallpaper-in-disneylands-haunted-mansion?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">visit with Rolly Crump</a>, the little-known designer of the Disneyland Haunted Mansion’s beloved wallpaper; a conversation at Hunker House with female-owned fair trade businesses about the importance of telling the stories of  the female artisans they partner with; or <a href="https://www.hunker.com/13717814/can-plants-talk-youll-want-to-read-this?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Teo Spengler’s fascinating piece</a> about the ways plants communicate. (Hey, if animals can have feelings…)</p>
 
                                                                             <p>Thanks for reading, guys. And remember, if, late one night, you find yourself watching unboxing videos made by preverbal children, go easy on yourself. It happens to all of us.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="35"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="left">
+                                                                                        <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/editors_letter/april/image2.jpg">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="right">
+                                                                                        <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/editors_letter/april/image1.jpg">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="35"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            Want to jump further down the Hunker rabbit hole?
+                                                                            <p style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;font-weight: normal;">Here are some of my other favorite stories from the past month…</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <ul>
 
+                                                                            <li>
+                                                                                <p>Introducing the <a href="https://www.hunker.com/13718121/introducing-the-hunker-and-east-fork-shopping-hub-shop-our-favorite-picks?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Hunker and East Fork Shopping Hub:</a> Shop Our <br class="hide">Favorite Picks</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>The <a href="https://www.hunker.com/13716679/the-exuberant-maximalism-of-this-postwar-designer-feels-more-relevant-than-ever?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Exuberant Maximalism of this Postwar Designer</a> Feels More Relevant Than Ever</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>In <a href="https://www.hunker.com/13717886/in-conversation-with-monica-perez-featured-artist-at-hunker-house?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Conversation with Monica Perez,</a> Featured Artist at Hunker House</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>These <a href="https://www.hunker.com/13717438/these-door-tassels-are-the-next-diy-project-you-should-be-doing?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Door Tassels Are the Next DIY Project</a> You Should Be Doing</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>These Days, Airlines Are Betting on <a href="https://www.hunker.com/13717402/these-days-airlines-are-betting-on-high-design-add-ons?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">High-Design Add-ons</a></p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>You Really Need to Know About <a href="https://www.hunker.com/13716584/you-really-need-to-know-about-modern-chinoiserie-because-we-cant-stop-thinking-about-it?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Modern Chinoiserie</a> (Because We Can't Stop Thinking About It!)</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>Behr's <a href="https://www.hunker.com/13717933/behrs-creative-new-paint-collection-was-designed-by-an-up-and-coming-artist?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Creative New Paint Color Palette</a> Was Designed by an <br class="hide">Up-and-Coming Artist</p>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <p>Amy From Homey Oh My Created <a href="https://www.hunker.com/13717949/amy-from-homey-oh-my-created-this-sweet-diy-yarn-wall-hanging-for-us?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">This Sweet DIY Yarn Wall Hanging</a> <br class="hide">for Us</p>
+                                                                            </li>
+                                                                        </ul>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -329,7 +462,20 @@ span.MsoHyperlinkFollowed {
                                                                     </tr>
                                                                     <tr>
                                                                         <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <p>x Eve</p>
                                                                             <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/march/evesignature.png" width="250" alt="" style="display:block; height:auto;border:0;">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="50"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            Past Issue
+                                                                            <p style="margin-top: 10px">
+                                                                                <a href="https://link.mail.hunker.com/a/1351/preview/817/177705/2f5fd8d1b96044e4e74aebd3b857c3cfdb37c905?message_id=ImRmY2ZiNjUwLTFlOTUtMDEzNy01NDE5LTQyMDEwYTgwMGZkM0BtYWlsLmh1bmtlci5jb20i" target="_blank" style="font-size:15px;font-weight:normal;font-family:'Times New Roman', Times, serif;line-height:20px;color:#CBA08D;text-decoration:none;">
+                                                                                EDITION NO. 1</a>
+                                                                            </p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -342,7 +488,7 @@ span.MsoHyperlinkFollowed {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="100"></td>
+                                    <td height="50"></td>
                                 </tr>
                                 <tr>
                                     <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="http://{{campaign.click_to_view}}" target="_blank" style="color:#222222;text-decoration: none;" data-mp-url-id="178f76300bdc67f96404dad8bb8718a0d05bfc77" mp-encode="false">View Online</a></td>
