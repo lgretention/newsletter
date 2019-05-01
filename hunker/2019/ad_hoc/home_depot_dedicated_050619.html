@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Hunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<meta name="x-apple-disable-message-reformatting">
+<link rel="shortcut icon" href="https://www.hunker.com/favicon.ico">
+<style type="text/css">
+/*
+    Created By: Thuan Hoang
+    Copyright 2019 LEAF GROUP
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #FFFFFF !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=two_col_image] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    td[class=h1] {
+        font-size: 26px !important;
+        line-height: 28px !important;
+        text-align: center !important;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    .mob_nopad {
+        padding-bottom: 0 !important;
+    }
+
+    .mob_nopad span {
+        font-size: 14px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=hero_content] {
+        padding: 0 35px !important;
+    }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=two_col_image] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    td[class=logo] {
+        padding: 25px 0 0 35px !important;
+    }
+
+    td[class=tagline] {
+        padding: 10px 0 0 35px !important;
+    }
+
+    td[class=h1] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+        text-align: center !important;
+    }
+
+    .description {
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    img[class=h_logo] {
+        width: 40px;
+    }
+
+    td[class=logo_padding] {
+        height: 25px !important;
+    }
+}
+</style>
+
+<body>
+    {% assign utm_campaign = "homedepot_dedicated_050619" %}
+    {% capture link1 %}https://www.hunker.com/13718048/how-this-garage-transformed-from-straight-chaos-into-an-organizational-paradise{% endcapture %} 
+    {% capture link2 %}https://www.hunker.com/13716975/add-to-cart-extreme-garage-makeover{% endcapture %} 
+    {% capture link3 %}https://www.hunker.com/13717404/add-to-cart-love-for-your-laundry-room{% endcapture %} 
+    {% capture link4 %}https://www.hunker.com/13718048/how-this-garage-transformed-from-straight-chaos-into-an-organizational-paradise{% endcapture %} 
+    {% capture link5 %}https://www.hunker.com/13718115/mudroom-makeover-how-this-diyer-turned-a-room-thats-usually-an-afterthought-into-a-full-on-design-moment{% endcapture %} 
+    {% capture link6 %}https://www.hunker.com/{% endcapture %} 
+
+<!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+                <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEECEA">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            {% if contact.email contains "@outlook" or contact.email contains "@hotmail" or contact.email contains "@live" or contact.email contains "@msn" or contact.email contains "@aol" %}
+                                            <tr>
+                                                <td align="center" style="color:#808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding:15px 0;">Thank you for signing up for hunker newsletters when you visited our website. <br class="hide">If you no longer want to receive emails from us, please <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#808080;" data-mp-url-id="b2f57facd0e4b05a431b2add3210a06dcea1b645" mp-encode="false">unsubscribe here</a>.</td>
+                                            </tr>
+                                            {% endif %}
+                                            <tr>
+                                                <td align="left" class="logo" style="padding:50px 0 0 50px;">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=logo" target="_blank" data-mp-url-id="e21d446e41459956a0fe95a17720707f9985ee96" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/hunker.png" alt="Hunker" class="h_logo" width="65" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="tagline" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:25px;color:#222222;padding:10px 0 0 50px;">
+                                                    Inspiration for the space around you.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" class="logo_padding"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/ad_hoc/HomeDepot_dedicated_050619/hero.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="35"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:30px; font-weight:bold;line-height:32px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">How to Amp Up the Most Overlooked Spaces in Your Home</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            You know those spots in your home that are magnets for the general ephemera of daily life? It’s time to unearth them. Together with <a href="https://www.homedepot.com/" target="_blank" style="color:#222222;font-weight: bold;text-decoration: none;">Home Depot</a>, we curated all of the essentials you need to refresh your storage spaces, starting with a full garage makeover. See how we transformed a dated, unusable garage in Seattle into a DIY command center below.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link1}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta1" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a data-add-tags="{{link1tag}}" href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta1" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">SEE THE TRANSFORMATION</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="35"></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td>
+                                        <!-- Tours -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td class="hide" height="50"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image1" target="_blank" data-mp-url-id="b265cccd8c288e90447b1797f87b426e862f4cdc" mp-encode="true">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/HomeDepot_dedicated_050619/image1-2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            <a href="http://{{link1}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="e734c37c8abdf45255fc89a68b143b13bbcd7938" mp-encode="true">
+                                                                                Add to Cart: Extreme Garage Makeover
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            We've rounded up what you need to clean, organize, and transform your garage into your home command center.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link2}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta2" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta2" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">BEST ITEMS TO GET IT DONE</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Features -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" target="_blank" data-mp-url-id="1c21587701edc8208d4920464257a58b6de20107" mp-encode="true">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/HomeDepot_dedicated_050619/image2-2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            <a href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline2" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="0b70207d7e3d66f7c79538973ea242ff83f405f4" mp-encode="true">
+                                                                                Add to Cart: Love for Your Laundry Room
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            These nine products will make your laundry room as pristine as the garments that come out of there — and make doing laundry (dare we say it?) enjoyable. 
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="{{link3}}?utm_source=newsletter&utm_medium=email&utm_campaign={{utm_campaign}}&c_crid=cta3" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=cta3" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Times New Roman', Times, serif;font-size:12px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:300px;-webkit-text-size-adjust:none;" data-mp-url-id="2e039a47d769d200c0324301e043177d939209c4" mp-encode="true">READ MORE</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- News -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" target="_blank" data-mp-url-id="215c060db6281c82bc14b73e4575b3158dcaeb4f" mp-encode="true">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/HomeDepot_dedicated_050619/image3-2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            <a href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="f4f524c6eb384779de6f580c343bad4b2060826b" mp-encode="true">
+                                                                                How This Garage Transformed from  Chaos Into an Organizational Paradise
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Since moving into her Seattle fixer upper, Alexi Politis Parry's garage has been a refuge for all of the materials needed to pull off renos in other areas of the house. 
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Design & Shopping -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" target="_blank" data-mp-url-id="0558cbf4b4add8a20b81e5db4aac5cfc6f32aa9d" mp-encode="true">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/HomeDepot_dedicated_050619/image4-2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            <a href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline4" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="7341a56eb9f07f58c944243a0c9c7a99211edfa9" mp-encode="true">
+                                                                                Design
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Whether you're mid-reno or just looking to give your rental a little upgrade, we have resources to help you with everything from figuring out which countertops to put in your kitchen to which velvet chair is going to make your living room pop.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- DIY -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image5" target="_blank" data-mp-url-id="88830144e7bf2c60b9c9a1f7d306891eebc1534d" mp-encode="true">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/HomeDepot_dedicated_050619/image1-2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
+                                                                            <a href="http://{{link5}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline5" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="0c35f6baecae8a3bd13658f26eb2610588c0da91" mp-encode="true">
+                                                                                DIY
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Whether we’re hacking our latest IKEA purchase or just trying to save a buck on trendy accessories, we’re all about getting crafty and making things by hand.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="hide" height="50"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEECEA">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td height="50"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="http://{{campaign.click_to_view}}" target="_blank" style="color:#222222;text-decoration: none;" data-mp-url-id="7d3c6f5898aca20bd9be7572955c507c4998d9cb" mp-encode="false">View Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0;">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_logo" target="_blank" data-mp-url-id="1a873301f0c3731dbd011408f537663df35ced07" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="60" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0 40px 0">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://flipboard.com/@Hunker_Home" target="_blank" data-mp-url-id="c7a9d12c29fec54ee88130dc7c5149b8cf2a36b5" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Flipboard.png" alt="Flipboard" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px;">
+                                                                            <a href="https://www.pinterest.com/hunkerhome/" target="_blank" data-mp-url-id="785feab13e276065837ff9ec70edda1929389cfd" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Pinterest.png" alt="Pinterest" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;">
+                                                                            <a href="https://www.facebook.com/hunkerhome/" target="_blank" data-mp-url-id="748a675e48498a1bb9968aa5164bce3daadd2402" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Facebook.png" alt="Facebook" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.instagram.com/hunkerhome/" target="_blank" data-mp-url-id="6e2f7015a81c6730c74224a634400b6b606772cf" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Instagram.png" alt="Instagram" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.youtube.com/c/hunkerhome" target="_blank" data-mp-url-id="1fe03a9ce82ac806af4b0d071e124ac981eec143" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Youtube.png" alt="YouTube" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.hunker.com%2Frss-feed%2Ffeedly%2Frecent" target="_blank" data-mp-url-id="5737195e473f253c02fd73251d8878a42514927b" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Feedly.png" alt="Feedly" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                                <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_site" target="_blank" style="color: #aaaaaa;text-decoration:none;" data-mp-url-id="8c20d3faaa2e59c19ecd7abe0d7ae50408f24812" mp-encode="true">Visit Hunker.com</a>  |  <a href="https://www.hunker.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_support#contact" target="_blank" style="color: #aaaaaa;text-decoration:none;" data-mp-url-id="fe3a07cb3f14895f961a7f0259194fe33f5787d9" mp-encode="true">Support</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                    © {{other.time_stamp | date: "%Y"}} Leaf Group Ltd. All Rights Reserved.
+                                                    <br>{{campaign.address}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer_pad" align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;">You received this email because you are subscribed to the Hunker Newsletter.
+                                                    <br>If you prefer not to receive emails from Hunker you may <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="b2f57facd0e4b05a431b2add3210a06dcea1b645" mp-encode="false">unsubscribe</a>.
+                                                    <br>
+                                                    Use of this web site constitutes acceptance of the Hunker <a href="https://www.hunker.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_terms" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="8a60bafd91dc4ddbdf9c42c6b0e63d0acefff749" mp-encode="true">Terms of Use</a> and <a href="https://www.hunker.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_pp" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="6d6b611e9b2a7d527840621428b3d0f29779d03a" mp-encode="true">Privacy Policy</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+    </div>
+    
+    
+    
+</body>
+
+</html>
