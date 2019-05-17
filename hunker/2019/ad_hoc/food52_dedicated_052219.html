@@ -31,7 +31,6 @@ img {
 }
 
 p {
-    margin: 0px !important;
     padding: 0px !important;
 }
 
@@ -143,8 +142,12 @@ span.MsoHyperlinkFollowed {
     }
 
     img[class=prod_img] {
-        width: 90% !important;
+        width: 95% !important;
         margin: 0 !important;
+    }
+
+    img[class=two_col_img] {
+        width: 100%;
     }
 
 }
@@ -242,7 +245,7 @@ span.MsoHyperlinkFollowed {
     }
 
     img[class=prod_img] {
-        width: 70% !important;
+        width: 90% !important;
         margin: 0 !important;
     }
 }
@@ -250,12 +253,10 @@ span.MsoHyperlinkFollowed {
 
 <body>
     {% assign utm_campaign = "food52_dedicated_052219" %}
-    {% capture link1 %}{% endcapture %}
-    {% capture link2 %}{% endcapture %}
-    {% capture link3 %}{% endcapture %}
-    {% capture link4 %}{% endcapture %}
-    {% capture link5 %}{% endcapture %}
-    {% capture link6 %}{% endcapture %}
+    {% capture link1 %}https://www.hunker.com/sweeps-food52{% endcapture %}
+    {% capture link2 %}https://www.hunker.com/13718775/just-add-guests-hunker-and-food52-host-a-tv-dinner-night{% endcapture %}
+    {% capture link3 %}https://www.hunker.com/13719162/just-add-guests-hunker-and-food52s-fave-diy-saturday-brunch-plans{% endcapture %}
+    {% capture link4 %}https://www.hunker.com/13719155/just-add-guests-hunker-and-food52-do-game-night{% endcapture %}
 <!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
     <table cellpadding="0" cellspacing="0" width="100%">
         <tr>
@@ -389,7 +390,7 @@ span.MsoHyperlinkFollowed {
                                                                         <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="300">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center"><a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="two_col_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/1665502c82e44200a5247594d7029d14.jpg" style="display:block; margin: 0 auto;"></a></td>
+                                                                                    <td align="center"><a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="two_col_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/tvdinner.jpg" style="display:block; margin: 0 auto;"></a></td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td height="25"></td>
@@ -413,7 +414,7 @@ span.MsoHyperlinkFollowed {
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                                        For your next appointment-viewing soiree, fix this couch-friendly Mediterranean feast for your fellow fans.
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -457,7 +458,7 @@ span.MsoHyperlinkFollowed {
                                                                         <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="300">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center"><a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="two_col_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/5af779f52cdf4766999ed4ac23ece950.jpg" style="display:block; margin: 0 auto;"></a></td>
+                                                                                    <td align="center"><a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image3" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="two_col_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/satbrunch.jpg" style="display:block; margin: 0 auto;"></a></td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td height="25"></td>
@@ -476,12 +477,12 @@ span.MsoHyperlinkFollowed {
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                                        <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">Game Night</a>
+                                                                                        <a data-add-tags="{{link3tag}}" href="http://{{link3}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">Saturday Brunch</a>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                                        To give our Saturday brunches that Gwyneth-like effortlessness, we opt for extra-sharable dishes that don't need to be individually plated.
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -525,7 +526,7 @@ span.MsoHyperlinkFollowed {
                                                                         <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="300">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center"><a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="two_col_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/8bba287135304c1e859d3da166a4ac07.jpg" style="display:block; margin: 0 auto;"></a></td>
+                                                                                    <td align="center"><a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image4" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="two_col_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/gamenight.jpg" style="display:block; margin: 0 auto;"></a></td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td height="25"></td>
@@ -544,12 +545,12 @@ span.MsoHyperlinkFollowed {
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:25px">
-                                                                                        <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">Saturday Brunch</a>
+                                                                                        <a data-add-tags="{{link4tag}}" href="http://{{link4}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="360b1cee84963f0b2b04ca6323c9f047b07f3e30" mp-encode="true">Game Night</a>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
-                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                                        No offense to fancy-schmancy dinner parties, but sometimes you just ... can't, you know? What's our favorite low-maintenance shindig? Game night!
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -593,7 +594,7 @@ span.MsoHyperlinkFollowed {
                             <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
                                 <tr>
                                     <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
-                                        More from Food52
+                                        Shop Food52
                                     </td>
                                 </tr>
                                 <tr>
@@ -614,15 +615,15 @@ span.MsoHyperlinkFollowed {
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="center">
-                                                                                        <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="prod_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/1665502c82e44200a5247594d7029d14.jpg" style="display:block; margin: 0 auto; padding:5px;"></a>
+                                                                                        <a href="https://fave.co/2HltQvD" mp-encode="true" target="_blank"><img alt="" border="0" class="prod_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/ceramics.jpg" style="display:block; margin: 0 auto;padding-bottom: 15px;"></a>
 
-                                                                                        <p>Product</p>
+                                                                                        <p style="font-size:16px; font-weight:bold;line-height:20px;font-family:'Times New Roman', Times, serif;color:#222222;margin: 0 15px;">Dansk Vandvid Ceramics</p>
                                                                                     </td>
 
                                                                                     <td align="center">
-                                                                                        <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="prod_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/1665502c82e44200a5247594d7029d14.jpg" style="display:block; margin: 0 auto; padding:5px;"></a>
+                                                                                        <a href="https://fave.co/2HwMNuj" mp-encode="true" target="_blank"><img alt="" border="0" class="prod_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/dinnerware.jpg" style="display:block; margin: 0 auto;padding-bottom: 15px;"></a>
 
-                                                                                        <p>Product</p>
+                                                                                        <p style="font-size:16px; font-weight:bold;line-height:20px;font-family:'Times New Roman', Times, serif;color:#222222;margin: 0 15px;">Jono Pandolfi Dinnerware</p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -630,19 +631,35 @@ span.MsoHyperlinkFollowed {
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center">
-                                                                                        <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="prod_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/1665502c82e44200a5247594d7029d14.jpg" style="display:block; margin: 0 auto; padding:5px;"></a>
+                                                                                        <a href="https://fave.co/2Hump4d" mp-encode="true" target="_blank"><img alt="" border="0" class="prod_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/woodbowls.jpg" style="display:block; margin: 0 auto;padding-bottom: 15px;"></a>
 
-                                                                                        <p>Product</p>
+                                                                                        <p style="font-size:16px; font-weight:bold;line-height:20px;font-family:'Times New Roman', Times, serif;color:#222222;margin: 0 15px;">Handcrafted Wood Bowls</p>
                                                                                     </td>
 
                                                                                     <td align="center">
-                                                                                        <a data-add-tags="{{link2tag}}" href="http://{{link2}}?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=image2" mp-encode="true" target="_blank" data-mp-url-id="0d621fb00c530b5d79b3ca450cb29ab0d8b4994e"><img alt="" border="0" class="prod_img" width="300" src="https://img.hunkercdn.com/600x/clsd/5/2/1665502c82e44200a5247594d7029d14.jpg" style="display:block; margin: 0 auto; padding:5px;"></a>
+                                                                                        <a href="https://fave.co/2VHQ6sz" mp-encode="true" target="_blank"><img alt="" border="0" class="prod_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/linens.jpg" style="display:block; margin: 0 auto;padding-bottom: 15px;"></a>
 
-                                                                                        <p>Product</p>
+                                                                                        <p style="font-size:16px; font-weight:bold;line-height:20px;font-family:'Times New Roman', Times, serif;color:#222222;margin: 0 15px;">Handmade Table Linens</p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td height="25"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <a href="https://fave.co/2HzOOFZ" mp-encode="true" target="_blank"><img alt="" border="0" class="prod_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/castiron.jpg" style="display:block; margin: 0 auto;padding-bottom: 15px;"></a>
+
+                                                                                        <p style="font-size:16px; font-weight:bold;line-height:20px;font-family:'Times New Roman', Times, serif;color:#222222;margin: 0 15px;">Field Cast Iron Skillet</p>
+                                                                                    </td>
+
+                                                                                    <td align="center">
+                                                                                        <a href="https://fave.co/2HIbu7p" mp-encode="true" target="_blank"><img alt="" border="0" class="prod_img" width="300" src="http://img.stitchcdn.com/hunker/2019/ad_hoc/Food52_dedicated/vases.jpg" style="display:block; margin: 0 auto;padding-bottom: 15px;"></a>
+
+                                                                                        <p style="font-size:16px; font-weight:bold;line-height:20px;font-family:'Times New Roman', Times, serif;color:#222222;margin: 0 15px;">Brass Bud Vases</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="35"></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
