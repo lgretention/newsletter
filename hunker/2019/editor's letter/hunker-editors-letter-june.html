@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Hunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<meta name="x-apple-disable-message-reformatting">
+<link rel="shortcut icon" href="https://www.hunker.com/favicon.ico">
+<style type="text/css">
+/*
+    Created By: Thuan Hoang
+    Copyright 2019 LEAF GROUP
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #F7F1E9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 50% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=portrait] {
+        width: 50% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 95%;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    *[class=two_col] {
+        width: 50% !important;
+    }
+
+    .mob_nopad {
+        padding-bottom: 0 !important;
+    }
+
+    .mob_nopad span {
+        font-size: 14px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=hero_content] {
+        padding: 0 35px !important;
+    }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=portrait] {
+        width: 60% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 95%;
+    }
+
+    td[class=logo] {
+        padding: 25px 0 0 35px !important;
+    }
+
+    td[class=tagline] {
+        padding: 10px 0 0 35px !important;
+    }
+
+    td[class=h1] {
+        font-size: 28px !important;
+    }
+
+    img[class=h_logo] {
+        width: 40px;
+    }
+
+    td[class=logo_padding] {
+        height: 25px !important;
+    }
+
+}
+</style>
+
+<body>
+    {% assign utm_campaign = "editors_letter_ed04_060319" %}
+<!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+                <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F1E9">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            {% if contact.email contains "@outlook" or contact.email contains "@hotmail" or contact.email contains "@live" or contact.email contains "@msn" or contact.email contains "@aol" %}
+                                            <tr>
+                                                <td align="center" style="color:#808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding:15px 0;">Thank you for signing up for hunker newsletters when you visited our website. <br class="hide">If you no longer want to receive emails from us, please <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#808080;" data-mp-url-id="d9427312eab07ad49357b366b79e754cf4a48634" mp-encode="false">unsubscribe here</a>.</td>
+                                            </tr>
+                                            {% endif %}
+                                            <tr>
+                                                <td align="left" class="logo" style="padding:50px 0 0 50px;">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=logo" target="_blank" data-mp-url-id="bcc4de93b12ce419c25e5826ce1ccc949a9dffd0" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/hunker.png" alt="Hunker" class="h_logo" width="65" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="tagline" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:25px;color:#222222;padding:10px 0 0 50px;">
+                                                    Inspiration for the space around you.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" class="logo_padding"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td height="15"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/may/eve.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="35"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                Editor's Note
+                                                                <p style="font-size:15px;font-weight:normal;font-family:'Times New Roman', Times, serif;color:#222222;margin:0;">EDITION NO. 3</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="15"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <p>Friends:</p>
+
+                                                                            <p>Around here, it’s pretty much our job to celebrate creative people and stuff they make. But there’s something about springtime that cranks up my appreciation of these folks — people who commit their hearts, hands, voices and minds to provoking thought and inspiration for the rest of us. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:22px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            Here are just a few of the recent visits we’ve had with some of my favorite creative souls...
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <p><strong>Frances Anderton</strong>, host of KCRW’s popular <i>DnA - Design and Architecture</i> show and podcast, just did a <a href="https://www.kcrw.com/culture/shows/design-and-architecture/rebuilding-notre-dame-bauhaus-in-israel-klaus-frahm/architects-gear-up-for-a-high-profile-competition-redesigning-notre-dame" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">fascinating segment on the restoration of Notre Dame</a> that explores the oft-thorny cultural, social, religious, and architectural forces that converge on and around an iconic building. Frances’s infectious curiosity, expansive knowledge, and super-classy accent have the power to spark a passion for design in just about anyone. I was so excited when she welcomed writer Teena Apeles and photographer Stephen Paul to the <a href="https://www.hunker.com/13717849/kcrws-frances-andertons-gehry-designed-apartment-is-far-out?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">eclectic, music-centric apartment she shares with her husband, Bennett Stein</a>. It’s in a Frank Gehry-designed building — naturally — and it’s truly one of a kind.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/may/image1.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <p><strong>Mike Perry</strong>, a visual artist whose work you’ll recognize from the <i>Broad City</i> credits, gave us <a href="https://www.hunker.com/13718482/13-neon-patio-pieces-that-make-us-love-the-trend-even-more?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">a tour of his Crown Heights studio</a>, where he creates his joyfully psychedelic work. "Nothing's better than buying a bunch of fluorescent inks,” he shares with writer Laura Lambert, and <a href="https://www.hunker.com/13718328/this-broad-city-artists-studio-changes-every-day-its-always-alive-and-crazy-and-moving?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">we couldn’t agree more</a>. (I’m seriously eyeing his <a href="https://www.mikeperrystudio.com/new-store/forward-looking" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">“Forward Looking” limited-edition print</a>.)</p>
+                                                                           
+                                                                            <p><strong>Ceramicist <a href="https://www.instagram.com/helen_levi/?hl=en" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Helen Levi</a></strong> gave Elizabeth Stamp and photographer Chloe Berk <a href="https://www.hunker.com/13718117/ceramicist-helen-levi-turned-a-raw-brooklyn-space-into-a-super-functional-studio?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">a peek inside her studio as well</a>, where she creates one-of-a-kind pieces featuring abstract elements such as swirls and paint-spatters. The light-filled Brooklyn space, which Levi’s architect sister helped to set up, is filled with her creations at various stages of completion and inspires awe at the mixture of scale and artistry she achieves there. Oh, and just FYI, I’m pretty obsessed with Levi’s <a href="https://helenlevi.com/products/meadow-planter" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">meadow planters</a> (and my birthday <i>is</i> in just a few days...anyone...?) </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="left">
+                                                                                        <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/editors_letter/may/image3.jpg">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="right">
+                                                                                        <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/editors_letter/may/image4.jpg">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="35"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            Want more tours of creatives’ spaces? Check out...
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p><a href="https://www.hunker.com/13717490/this-artists-home-has-all-that-she-wants-her-paintings-a-bed-to-call-her-own-and-a-soft-landing?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">This Artist's Home Has All That She Wants: Her Paintings, a Bed to Call Her Own, and a Soft Landing</a></p>
+                                                                                </li>
+
+                                                                                <li>
+                                                                                    <p><a href="https://www.hunker.com/13717763/her-studio-space-may-be-minimal-but-artist-shelly-sazdanoff-is-rediscovering-color?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Her Studio Space May Be Minimal, but Artist Shelly Sazdanoff Is Rediscovering Color</a></p>
+                                                                                </li>
+
+                                                                                <li>
+                                                                                    <p><a href="https://www.hunker.com/13717886/in-conversation-with-monica-perez-featured-artist-at-hunker-house?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">In Conversation With Monica Perez, Featured Artist at Hunker House</a></p>
+                                                                                </li>
+
+                                                                                <li>
+                                                                                    <p><a href="https://www.hunker.com/13718363/california-modern-meets-lower-east-side-in-this-emmy-award-winners-historic-coop-village-home?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">California Modern Meets Lower East Side in This Emmy Award Winner’s Historic Coop Village Home</a></p>
+                                                                                </li>
+
+                                                                                <li>
+                                                                                    <p><a href="https://www.hunker.com/13717726/morrow-soft-goods-co-founders-give-us-a-peek-inside-their-1920s-hillside-home?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}" target="_blank" style="color:#CBA08D;text-decoration:none;font-weight:bold;">Morrow Soft Goods Co-Founders Give Us a Peek Inside Their 1920s Hillside Home</a></p>
+                                                                                </li>
+
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="35"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            <p>That’s all for me. Have a great month, everyone!</p>
+                                                                            <p>Eve</p>
+                                                                            <img src="http://img.stitchcdn.com/hunker/2019/editors_letter/march/evesignature.png" width="250" alt="" style="display:block; height:auto;border:0;">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="50"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                            Past Issue
+                                                                            <p style="margin-top: 10px">
+                                                                                <a href="https://link.mail.hunker.com/a/1351/preview/916/177705/37bcf880579434b6cb1ae4196b1d4a60c6573bfe?message_id=ImM0OTUyMjQwLTM2YmMtMDEzNy04YTI0LTQyMDEwYTgwMGZkOUBtYWlsLmh1bmtlci5jb20i" target="_blank" style="font-size:15px;font-weight:normal;font-family:'Times New Roman', Times, serif;line-height:20px;color:#CBA08D;text-decoration:none;">
+                                                                                EDITION NO. 2</a>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="50"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="http://{{campaign.click_to_view}}" target="_blank" style="color:#222222;text-decoration: none;" data-mp-url-id="178f76300bdc67f96404dad8bb8718a0d05bfc77" mp-encode="false">View Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0;">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_logo" target="_blank" data-mp-url-id="af27f80a86ded9b34a3d9900413ebb55ba60a3c4" mp-encode="true"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="60" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0 40px 0">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://flipboard.com/@Hunker_Home" target="_blank" data-mp-url-id="6e1809fb989dae01c98418c25e671f4e5770f1dd" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Flipboard.png" alt="Flipboard" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px;">
+                                                                            <a href="https://www.pinterest.com/hunkerhome/" target="_blank" data-mp-url-id="6e1809fb989dae01c98418c25e671f4e5770f1dd" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Pinterest.png" alt="Pinterest" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;">
+                                                                            <a href="https://www.facebook.com/hunkerhome/" target="_blank" data-mp-url-id="a8b885f51df679bd4bfc8bd1179d8aa105897dba" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Facebook.png" alt="Facebook" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.instagram.com/hunkerhome/" target="_blank" data-mp-url-id="a27bac3e1683904834f10a320a8b08dad8cd4505" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Instagram.png" alt="Instagram" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.youtube.com/c/hunkerhome" target="_blank" data-mp-url-id="7f3728d1ff3f715c7932e2584d9670afbab0ac54" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Youtube.png" alt="YouTube" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.hunker.com%2Frss-feed%2Ffeedly%2Frecent" target="_blank" data-mp-url-id="7f3728d1ff3f715c7932e2584d9670afbab0ac54" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Feedly.png" alt="Feedly" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                                <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_site" target="_blank" style="color: #aaaaaa;text-decoration:none;" data-mp-url-id="f4169adba55208567630e41216182b31d4f81d13" mp-encode="true">Visit Hunker.com</a>  |  <a href="https://www.hunker.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_support#contact" target="_blank" style="color: #aaaaaa;text-decoration:none;" data-mp-url-id="48f3df1f0f74cf5b6619e7a3c952fa2a1781c8da" mp-encode="true">Support</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                    © {{other.time_stamp | date: "%Y"}} Leaf Group Ltd. All Rights Reserved.
+                                                    <br>{{campaign.address}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer_pad" align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;">You received this email because you are subscribed to the Hunker Newsletter.
+                                                    <br>If you prefer not to receive emails from Hunker you may <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="d9427312eab07ad49357b366b79e754cf4a48634" mp-encode="false">unsubscribe</a>.
+                                                    <br>
+                                                    Use of this web site constitutes acceptance of the Hunker <a href="https://www.hunker.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_terms" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="0dd6b14d147ea53fa53b1f004bce4ea6a84655ea" mp-encode="true">Terms of Use</a> and <a href="https://www.hunker.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_pp" target="_blank" style="color:#222222;text-decoration:none;" data-mp-url-id="327ef47d7ee48ceac518717809d64d7f0a78e995" mp-encode="true">Privacy Policy</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Footer end -->
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Content end -->
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Full width table End-->
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+    </div>
+    </td>
+    </tr>
+    </table>
+</body>
+
+</html>
