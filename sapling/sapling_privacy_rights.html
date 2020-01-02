@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Sapling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="https://www.sapling.com/favicon_16.png">
+<style type="text/css">
+/*
+	Developed By: Hector Consuegra
+	Developed: Mar. 23, 2018	
+	Copyright 2018 LEAF GROUP - SAPLING
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+p {
+    Margin: 0px !important;
+    padding: 0px !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=f11] {
+        font-size: 11px !important;
+    }
+
+    td[class=f18] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 28px 18px !important;
+    }
+
+    td[class=f18_2] {
+        font-size: 18px !important;
+    }
+
+    td[class=f21] {
+        font-size: 21px !important;
+    }
+
+    td[class=mob_title] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 35px 18px 22px 18px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 20px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=pad_header] {
+        padding: 0 20px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=f11] {
+        font-size: 11px !important;
+    }
+
+    td[class=f18] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 28px 18px !important;
+    }
+
+    td[class=f18_2] {
+        font-size: 18px !important;
+    }
+
+    td[class=mob_title] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 35px 18px 22px 18px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 30px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=pad_header] {
+        padding: 0 12px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    .em_hide {
+        display: none !important;
+    }
+}
+</style>
+
+<body>
+    <!-- LS Paste -->
+    {% capture utm_campaign %}{{"now" | date: "%m%d%y" }}{% endcapture %}
+    <!-- /LS Paste -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+                <!--Full width table start-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fafafa">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="700" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="table-layout:fixed;min-width:700px;">
+                                <tr>
+                                    <td class="hide" height="1" style="line-height:0px; font-size:0px;"><img src="http://img.stitchcdn.com/ehow/2016/triggered/social_nav/spacer.gif" height="1" width="700" alt="" style="display:block; width:700px; min-width:700px;" border="0"></td>
+                                </tr>
+                                <!-- Header start -->
+                                <tr>
+                                    <td class="pad_header" align="center" bgcolor="#fafafa" style="padding:0 50px;">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="right" bgcolor="#fafafa" style="font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding-top:20px; padding-right:5px;"><a href="http://{{campaign.click_to_view}}" target="_blank" style="color:#808080;" data-mp-url-id="178f76300bdc67f96404dad8bb8718a0d05bfc77" mp-encode="false">View in browser</a></td>
+                                            </tr>
+                                            {% if contact.email contains "@outlook" or contact.email contains "@hotmail" or contact.email contains "@live" or contact.email contains "@msn" %}
+                                            <tr>
+                                                <td align="center" bgcolor="#fafafa" style="color:#808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding:15px 0;">Thank you for signing up for Sapling newsletters when you visited our website. <br class="hide">If you no longer want to receive emails from us, please <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#808080;" data-mp-url-id="d9427312eab07ad49357b366b79e754cf4a48634" mp-encode="false">unsubscribe here</a>.</td>
+                                            </tr>
+                                            {% endif %}
+                                            <tr>
+                                                <!-- Logo -->
+                                                <td align="center" bgcolor="#fafafa" style="padding-top:10px;padding-bottom:0px;">
+                                                    <a href="https://www.sapling.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=logo" target="_blank" data-mp-url-id="74c2bcd54ed6f275fd949274b1127fa5a620963f" mp-encode="true"><img src="http://img.stitchcdn.com/sapling/2017/navigation/logo_big.png" alt="Sapling" width="160" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <!-- Navigation -->
+                                            <tr>
+                                                <td class="f11" align="center" style="font-size:14px;">
+                                                    <table width="364" class="nav" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Header end -->
+                                <tr>
+                                    <td height="30" class="h20" style="font-size:0;line-height:0;" bgcolor="#fafafa"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="mob_pad" style="padding:0 50px;">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td bgcolor="#ffffff">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                    	<td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="em_font24" style="font-family:Helvetica, Arial, sans-serif; font-size:28px; line-height:34px; color:#333333;padding:20px;" valign="top">
+                                                                            An Important Update to Our Privacy Policy
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding: 0 20px;">
+                                                                            <p>We’ve made a few changes to our <a href="https://www.sapling.com/privacy-policy" target="_blank" style="color:#222222;text-decoration:none;font-weight: bold;">Privacy Policy</a> that will be effective on January 1, 2020. Here’s a summary of the key changes we’re making:</p>
+
+                                                                            <ul>
+                                                                                <li>For individuals who are Nevada residents, we included certain disclosures in connection with your Nevada privacy rights.</li>
+
+                                                                                <li>Beginning January 1, 2020, for individuals who are California residents, we included certain disclosures in connection with your California privacy rights under the California Consumer Privacy Act, including the right for you to request that we <a href="https://www.sapling.com/privacy-policy#CCPA" target="_blank" style="color:#222222;text-decoration:none;font-weight: bold;">do not sell your personal information.</a></li>
+
+                                                                                <li>We’ve added a new <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/6ae80e28-005a-47b1-85b4-3c150c46e71a/62b1a42b-6758-4518-a653-e4d5b7c7ea33.html" target="_blank" style="color:#222222;text-decoration:none;font-weight: bold;">Consumer Privacy Request form</a>, making it even easier for you to submit a consumer privacy rights request. </li>
+                                                                            </ul>
+
+                                                                            <p>Thank you for being a valued subscriber. You can contact us at legal@leafgroup.com with any questions.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    	<td height="40"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0;">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <a href="https://www.sapling.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_logo" target="_blank" data-mp-url-id="089ccff0d8ce11816e6a094fbed311316221739e" mp-encode="true"><img src="http://img.stitchcdn.com/sapling/2017/navigation/small_logo.png" alt="Sapling" width="74" style="display:block;height:auto;border:0;"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- Social Media -->
+                                                        <tr>
+                                                            <td align="center" style="padding:20px 0 30px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="156" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <a href="https://www.facebook.com/Saplingdotcom/" target="_blank" data-mp-url-id="02c1b67774f21fe703c76890d9f449f89cd9ce14" mp-encode="false"><img src="http://img.stitchcdn.com/sapling/2017/navigation/facebook.png" alt="Facebook" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                    </td>
+                                                                                    <td style="padding:0 28px;">
+                                                                                        <a href="https://twitter.com/saplingdotcom" target="_blank" data-mp-url-id="cec1dcd54f1fb8a2c749cd4ee6d34b95a858d0fb" mp-encode="false"><img src="http://img.stitchcdn.com/sapling/2017/navigation/twitter.png" alt="Twitter" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <a href="https://www.instagram.com/saplingdotcom/" target="_blank" data-mp-url-id="d443332800ab17146a26ac01cf39340513dc5df8" mp-encode="false"><img src="http://img.stitchcdn.com/sapling/2017/navigation/instagram.png" alt="Instagram" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                    </td>
+                                                                                    <td style="padding-left:28px;">
+                                                                                        <a href="https://www.pinterest.com/saplingdotcom/" target="_blank" data-mp-url-id="7ae24348a594e07c7a339c88ac5e32caa3d332ad" mp-encode="false"><img src="http://img.stitchcdn.com/sapling/2017/navigation/pinterest.png" alt="Pinterest" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- Divider line -->
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center" style="color: #808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;">
+                                                                            <a href="https://www.sapling.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_visit" target="_blank" style="color: #808080;text-decoration:none;" data-mp-url-id="0e2af67c5b9fd7206c7077297a5bd893b3df82fc" mp-encode="true">Visit Sapling.com</a>  |  <a href="https://www.sapling.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_support#contact" target="_blank" style="color: #808080;text-decoration:none;" data-mp-url-id="d5dadf37bd4f7f1397f3917b29ad7f207329b670" mp-encode="true">Support</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="color:#808080;font-size:11px;line-height:24px;font-family:'Helvetica',Arial,sans-serif;padding-top:25px;">© {{other.time_stamp | date: "%Y"}} Leaf Group Ltd. All Rights Reserved. 1655 26th St. Santa Monica, CA 90404</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="footer_pad" align="center" style="color:#808080;font-size:11px;line-height:14px;font-family:'Helvetica',Arial,sans-serif;padding:15px 25px;">You received this email because you are subscribed to the Sapling Newsletter. If you prefer not to receive emails from Sapling you may <a href="http://{{campaign.list_unsub_url_full}}" target="_blank" style="color:#7cccef;text-decoration:none;" data-mp-url-id="d9427312eab07ad49357b366b79e754cf4a48634" mp-encode="false">unsubscribe</a>.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mob_pad" align="center" style="color:#808080;font-size:11px;line-height:14px;font-family:'Helvetica',Arial,sans-serif;padding:0 25px;">Use of this web site constitutes acceptance of the Sapling <a href="https://www.sapling.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_terms" target="_blank" style="color:#7cccef;text-decoration:none;" data-mp-url-id="e88cd5fcfe3b200a19c74a329628b69b9f81e66a" mp-encode="true">Terms of Use</a> and <a href="https://www.sapling.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign={{utm_campaign}}&amp;c_crid=footer_pp" target="_blank" style="color:#7cccef;text-decoration:none;" data-mp-url-id="59002072da10e4e5c05e7df694539b4f90701474" mp-encode="true">Privacy Policy</a>.</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- Footer end -->
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Content end -->
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!--Full width table End-->
+                <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
