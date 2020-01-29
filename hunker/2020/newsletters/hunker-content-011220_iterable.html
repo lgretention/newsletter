@@ -1,0 +1,950 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Hunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<meta name="x-apple-disable-message-reformatting">
+<link rel="shortcut icon" href="https://www.hunker.com/favicon.ico">
+<style type="text/css">
+/*
+    Created By: Thuan Hoang
+    Copyright 2019 LEAF GROUP
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #F7F1E9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .description {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    img[class=two_col_img] {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    .mob_nopad {
+        padding-bottom: 0 !important;
+    }
+
+    .mob_nopad span {
+        font-size: 14px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .description {
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    td[class=hero_content] {
+        padding: 0 35px !important;
+    }
+
+    td[class=tagline] {
+        padding: 10px 0 0 35px !important;
+    }
+
+    td[class=h1] {
+        font-size: 28px !important;
+    }
+
+    img[class=two_col_img] {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    img[class=h_logo] {
+        width: 40px;
+    }
+}
+</style>
+
+<body>
+<!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+                <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F1E9">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="padding-top: 20px">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="85" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- Content Section 1 -->
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <a href="https://www.hunker.com/13723475/farmhouse-family-room-ideas?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image1" target="_blank"><img src="https://cdn.maropost.com/pro/uploads/account_1351/776/0112-1.jpg" width="640" alt="10 Farmhouse Decor Ideas That Will Make Your Family Room More Cozy" style="display:block; height:auto;border:0;" border="0" class="full_img"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://www.hunker.com/13723475/farmhouse-family-room-ideas?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                10 Farmhouse Decor Ideas That Will Make Your Family Room More Cozy
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                             Lovers of rustic spaces rejoice: Farmhouse-style furniture and decor are<br class="hide"> having a moment.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <!-- CTA -->
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13723475/farmhouse-family-room-ideas?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta1" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13723475/farmhouse-family-room-ideas?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta1" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                FARM CHARM
+                                                                                            </a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="30"></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- /Content Section 1 -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td>
+                                        <!-- Content Section 2 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13722737/boho-mirror-wood-yarn-tutorial?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image2" target="_blank"><img alt="Easy DIY Tutorial: Boho Mirror Featuring Wood and Yarn" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/783/0112-2.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13722737/boho-mirror-wood-yarn-tutorial?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline2" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                            Easy DIY Tutorial: Boho Mirror Featuring Wood and Yarn
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                                        This decor DIY is simple to make but looks like a high-end piece.
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13722737/boho-mirror-wood-yarn-tutorial?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta2" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13722737/boho-mirror-wood-yarn-tutorial?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta2" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            FOOL THEM ALL!
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Contect Section 2 -->
+                                        <!-- Content Section 3 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13723298/decorating-secrets-from-zara-home-stylist-colin-king?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image3" target="_blank"><img alt="The Decorating Secrets a Zara Home Stylist Knows (That You Don't)" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/782/0112-3.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13723298/decorating-secrets-from-zara-home-stylist-colin-king?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                            The Decorating Secrets a Zara Home Stylist Knows (That You Don't)
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 20px;">
+                                                                                        Colin King reveals the color trends, his favorite Zara Home pieces, and the biggest decorating mistakes he always notices.
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13723298/decorating-secrets-from-zara-home-stylist-colin-king?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta3" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13723298/decorating-secrets-from-zara-home-stylist-colin-king?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta3" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            INSIDER TIPS
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Content Section 3 -->
+                                        <!-- Content Section 4 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13722554/austin-texas-ranch-house-tour?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image4" target="_blank"><img alt="Natural Elements and a Pale Pink Kitchen Make This Austin Pad So Enviable" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/781/0112-4.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13722554/austin-texas-ranch-house-tour?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline4" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                             Natural Elements and a Pale Pink Kitchen Make This Austin Pad <br class="hide">So Enviable
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                                        A 1950s ranch-style home in Austin gets a light and airy makeover.
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13722554/austin-texas-ranch-house-tour?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta4" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13722554/austin-texas-ranch-house-tour?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta4" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            TAKE THE TOUR
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Contect Section 4 -->
+                                        <!-- Content Section 5 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13723905/wayfair-new-line-foundstone?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image5" target="_blank"><img alt="Wayfair Just Launched a Dreamy (and Affordable!) Line of Midcentury Modern Furniture" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/778/0112-5.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13723905/wayfair-new-line-foundstone?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline5" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                            Wayfair Just Launched a Dreamy (and Affordable!) Line of Midcentury Modern Furniture
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                                        You're going to want to check out the retailer's latest addition to its selection of exclusive brands, Foundstone.
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13723905/wayfair-new-line-foundstone?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta5" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13723905/wayfair-new-line-foundstone?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta5" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            SHOP NOW
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Content Section 5 -->
+                                        <!-- Content Section 6 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13723417/gray-kitchen-backsplash-ideas-and-inspiration?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image6" target="_blank"><img alt="It's Official: Gray Backsplashes Are Having a Moment and These Kitchens Prove It" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/780/0112-6.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13723417/gray-kitchen-backsplash-ideas-and-inspiration?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline6" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                            It's Official: Gray Backsplashes Are Having a Moment and These Kitchens Prove It
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                                        A gray backsplash is a welcomed alternative to a stark, all-white kitchen. 
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13723417/gray-kitchen-backsplash-ideas-and-inspiration?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta6" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13723417/gray-kitchen-backsplash-ideas-and-inspiration?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta6" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            GRAY FOR DAYS
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Content Section 6 -->
+                                        <!-- Content Section 7 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13723906/new-home-tech-2020?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image7" target="_blank"><img alt="9 New Home Tech Products Straight From the Future" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/784/0112-7_2.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13723906/new-home-tech-2020?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline7" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                            9 New Home Tech Products Straight From the Future
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                                        What could 2020 possibly bring?
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13723906/new-home-tech-2020?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta7" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13723906/new-home-tech-2020?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta7" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            SERIOUSLY WHAT?
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Content Section 7 -->
+                                        <!-- Content Section 8 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="30"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="315">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left"><a href="https://www.hunker.com/13723568/hanging-decor-ideas-and-photos?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=image8" target="_blank"><img alt="If You Want Easy Decor, Hang These 9 Items" border="0" class="full_img" width="280" src="https://cdn.maropost.com/pro/uploads/account_1351/779/0112-8.jpg" style="display:block;"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="25"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="320" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:20px; font-weight:bold;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                        <a href="https://www.hunker.com/13723568/hanging-decor-ideas-and-photos?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=headline8" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                            If You Want Easy Decor, Hang These 9 Items
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom:20px;">
+                                                                                        We pulled some easy decor inspiration from some of our favorite Hunker tours to help you kickstart your decor goals in the new year. 
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td align="center">
+                                                                                                    <div>
+                                                                                                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:320px;" href="https://www.hunker.com/13723568/hanging-decor-ideas-and-photos?utm_source=newsletter&utm_medium=email&utm_campaign=011220&c_crid=cta8" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                                        <a href="https://www.hunker.com/13723568/hanging-decor-ideas-and-photos?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=cta8" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:1px;width:320px;-webkit-text-size-adjust:none;">
+                                                                                                            CLOUD NINE
+                                                                                                        </a>
+                                                                                                        <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="35"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /Content Section 8 -->
+                                    </td>
+                                </tr>
+                                <!--Content end-->
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F1E9">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td height="50"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="{{viewInBrowserUrl}}" target="_blank" style="color:#222222;text-decoration: none;" mp-encode="false">View Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0;">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=footer_logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="60" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0 40px 0">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://apple.news/TBagcKwvaSky69mjP3YECVw" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Apple_News.png" alt="Apple News" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px;">
+                                                                            <a href="https://flipboard.com/@Hunker_Home" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Flipboard.png" alt="Flipboard" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;;">
+                                                                            <a href="https://www.pinterest.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Pinterest.png" alt="Pinterest" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;">
+                                                                            <a href="https://www.facebook.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Facebook.png" alt="Facebook" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.instagram.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Instagram.png" alt="Instagram" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.youtube.com/c/hunkerhome" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Youtube.png" alt="YouTube" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.hunker.com%2Frss-feed%2Ffeedly%2Frecent" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Feedly.png" alt="Feedly" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                                <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=footer_site" target="_blank" style="color: #aaaaaa;text-decoration:none;">Visit Hunker.com</a>  |  <a href="https://www.hunker.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=footer_support#contact" target="_blank" style="color: #aaaaaa;text-decoration:none;">Support</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                    © {{now format='MMMM yyyy'}} Leaf Group Ltd. All Rights Reserved.
+                                                    <br>{{physicalAddress}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer_pad" align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;">You received this email because you are subscribed to the Hunker Newsletter.
+                                                    <br>If you prefer not to receive emails from Hunker you may <a href="{{unsubscribeUrl}}" target="_blank" style="color:#222222;text-decoration:none;" mp-encode="false">unsubscribe</a>.
+                                                    <br>
+                                                    Use of this web site constitutes acceptance of the Hunker <a href="https://www.hunker.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=footer_terms" target="_blank" style="color:#222222;text-decoration:none;">Terms of Use</a> and <a href="https://www.hunker.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=011220&amp;c_crid=footer_pp" target="_blank" style="color:#222222;text-decoration:none;">Privacy Policy</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Footer end -->
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Content end -->
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Full width table End-->
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+    </div>
+    </td>
+    </tr>
+    </table>
+</body>
+
+</html>
