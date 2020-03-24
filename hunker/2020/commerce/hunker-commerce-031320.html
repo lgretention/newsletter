@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Hunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<meta name="x-apple-disable-message-reformatting">
+<link rel="shortcut icon" href="https://www.hunker.com/favicon.ico">
+<style type="text/css">
+/*
+    Created By: Thuan Hoang
+    Copyright 2019 LEAF GROUP
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #F7F7F6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=two_col_image] {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding: 0 50px;
+        text-align: center;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    .mob_nopad {
+        padding-bottom: 0 !important;
+    }
+
+    .mob_nopad span {
+        font-size: 14px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=hero_content] {
+        padding: 0 35px !important;
+    }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=portrait] {
+        width: 70% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    td[class=logo] {
+        padding: 25px 0 0 35px !important;
+    }
+
+    td[class=tagline] {
+        padding: 10px 0 0 35px !important;
+    }
+
+    td[class=h1] {
+        font-size: 28px !important;
+    }
+
+    .description {
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    img[class=h_logo] {
+        width: 40px;
+    }
+}
+</style>
+
+<body>
+<!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+                <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F7F6">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="padding-top: 20px">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/hunkerhaul.png" alt="Hunker" width="225" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1" bgcolor="#D8D8D8">
+                                            </td>
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://www.hunker.com/13724603/hunker-house-hygge-bohemian-brilli?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=image1" target="_blank" data-mp-url-id="b4cb639c9c03942f8eac80b22d4c4780ced4fd7a" mp-encode="true"><img src="https://img.hunkercdn.com/default/clsd/2/19/bf7bcc403f4749a7a694a13a6b43b247.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:20px;text-align:center;text-decoration:none;letter-spacing:0.5px;color:#222222;margin:0;">
+                                                                            PRESENTED BY
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="" target="_blank"><img src="https://img.hunkercdn.com/x40/media-storage/hunker_data/sponsored/de4b276a-787e-4265-b8f9-2c68fe5652d3-Brilli_logo_Byellow.png" width="35" alt="Home Depot" style="display:block; height:auto;border:0;" border="0"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:30px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;text-decoration: none;">
+                                                                                 Ready to Sleep Like a Baby? Here's Everything You Need to Hygge Up Your Bedroom
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                             If you're anything like us, your Pinterest feed is filled with envy-inducing bedroom shots. But instead of endlessly scrolling in a fit of jealousy, why not do something about it? From cozy mattresses and bedding  to sunset-like lighting from Brilli, here's everything you need for a dreamy, sleep-inducing bedroom.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://www.hunker.com/13724603/hunker-house-hygge-bohemian-brilli" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13724603/hunker-house-hygge-bohemian-brilli?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;" mp-encode="false">LEARN MORE</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="30"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td>
+                                        <!-- Product 1 & 2 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/2Q4XXeQ" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1149/Avocado_031320.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/2Q4XXeQ" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/2Q4XXeQ" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/2Q4XXeQ" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Avocado</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                           Get 20% off Avocado’s certified organic, non-toxic pillows by using promo code <strong>HUNKER</strong> through March 13.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/2IAjNmz" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1152/Helix_0313120_2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/2IAjNmz" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/2IAjNmz" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/2IAjNmz" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Helix Sleep</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                          Need a total bedroom refresh? Get up to $200 off mattresses, pillows, bedding, bases, and more with code <strong>HUNKER200</strong>.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Product 3 & 4 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/38BTC9r" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1148/SerenaLily_031320.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/38BTC9r" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/38BTC9r" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/38BTC9r" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Serena & Lily</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            The spring design event includes 20% off on beds, bedding, pillows, and <i>everything</i> else in store and on site. Use code <strong>FRESHMIX</strong> through March 16.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/39FyKj9" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1147/Brentwood_031320.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/39FyKj9" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/39FyKj9" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/39FyKj9" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Brentwood Home</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            Score 20% off Brentwood Home pillows — from activated charcoal to gel memory foam — using promo code <strong>HUNKER</strong> through March 13.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Product 5 & 6 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="center" class="h1" style="font-size:30px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;text-decoration: none;">
+                                                         The Best of Sleep Week
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://www.hunker.com/13725104/chic-diffusers-for-bedrooms?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1151/Diffusers_031320.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://www.hunker.com/13725104/chic-diffusers-for-bedrooms?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13725104/chic-diffusers-for-bedrooms?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                <a href="https://www.hunker.com/13725104/chic-diffusers-for-bedrooms?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>7 Chic Diffusers to Add to Your Bedroom ASAP</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            Beyond providing the simple pleasure of good smells, essential oil diffusers can offer serious sleep benefits.  
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://www.hunker.com/13720712/7-linen-sheet-sets-that-are-actually-worth-the-investment?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1144/LinenSheets_031320.jpeg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://www.hunker.com/13720712/7-linen-sheet-sets-that-are-actually-worth-the-investment?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13720712/7-linen-sheet-sets-that-are-actually-worth-the-investment?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://www.hunker.com/13720712/7-linen-sheet-sets-that-are-actually-worth-the-investment?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Linen Sheets That Are Actually Worth the Investment</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            We tried six of the most popular sets of linen sheets on the market — testing each for several nights and putting them through a wash and dry at home.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Prouct 7 & 8 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                     <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://www.hunker.com/13725103/melatonin-magnesium-cbd-products-for-sleep?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1145/CBD_Melatonin_Magnesium_031320.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://www.hunker.com/13725103/melatonin-magnesium-cbd-products-for-sleep?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13725103/melatonin-magnesium-cbd-products-for-sleep?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://www.hunker.com/13725103/melatonin-magnesium-cbd-products-for-sleep?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>9 CBD, Magnesium, and Melatonin Products to Help You Sleep Like a Baby</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            The hormone melatonin, the mineral magnesium, and the non-psychoactive phytocannabinoid CBD are known for inducing drowsiness and encouraging restfulness.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://www.hunker.com/13725409/best-travel-sleep-products?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1146/TravelSleep_031320.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://www.hunker.com/13725409/best-travel-sleep-products?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13725409/best-travel-sleep-products?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://www.hunker.com/13725409/best-travel-sleep-products?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Travel Products to Make <br class="hide">Sleeping on the Road Feel That Much Cozier</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            From things that remind you of your own cozy bed to natural disinfectants, here are six travel products that will make sleeping away from home a little easier.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F7F6">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td height="30"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="{{viewInBrowserUrl}}" target="_blank" style="color:#222222;text-decoration: none;" mp-encode="false">View Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0;">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=footer_logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="60" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0 40px 0">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://apple.news/TBagcKwvaSky69mjP3YECVw" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Apple_News.png" alt="Apple News" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px;">
+                                                                            <a href="https://flipboard.com/@Hunker_Home" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Flipboard.png" alt="Flipboard" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;;">
+                                                                            <a href="https://www.pinterest.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Pinterest.png" alt="Pinterest" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;">
+                                                                            <a href="https://www.facebook.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Facebook.png" alt="Facebook" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.instagram.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Instagram.png" alt="Instagram" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.youtube.com/c/hunkerhome" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Youtube.png" alt="YouTube" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.hunker.com%2Frss-feed%2Ffeedly%2Frecent" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Feedly.png" alt="Feedly" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                                <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=footer_site" target="_blank" style="color: #aaaaaa;text-decoration:none;">Visit Hunker.com</a>  |  <a href="https://www.hunker.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=footer_support#contact" target="_blank" style="color: #aaaaaa;text-decoration:none;">Support</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                    © {{now format='MMMM yyyy'}} Leaf Group Ltd. All Rights Reserved.
+                                                    <br>{{physicalAddress}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer_pad" align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;">You received this email because you are subscribed to the Hunker Newsletter.
+                                                    <br>If you prefer not to receive emails from Hunker you may <a href="{{hostedUnsubscribeUrl}}" target="_blank" style="color:#222222;text-decoration:none;" mp-encode="false">unsubscribe</a>.
+                                                    <br>
+                                                    Use of this web site constitutes acceptance of the Hunker <a href="https://www.hunker.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=footer_terms" target="_blank" style="color:#222222;text-decoration:none;">Terms of Use</a> and <a href="https://www.hunker.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_031320&amp;c_crid=footer_pp" target="_blank" style="color:#222222;text-decoration:none;">Privacy Policy</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+    </div>
+    
+    
+    
+</body>
+
+</html>

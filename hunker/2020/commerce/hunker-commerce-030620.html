@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Hunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<meta name="x-apple-disable-message-reformatting">
+<link rel="shortcut icon" href="https://www.hunker.com/favicon.ico">
+<style type="text/css">
+/*
+    Created By: Thuan Hoang
+    Copyright 2019 LEAF GROUP
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #F7F7F6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=two_col_image] {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding: 0 50px;
+        text-align: center;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    .mob_nopad {
+        padding-bottom: 0 !important;
+    }
+
+    .mob_nopad span {
+        font-size: 14px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=hero_content] {
+        padding: 0 35px !important;
+    }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=portrait] {
+        width: 70% !important;
+    }
+
+    img[class=two_col_image] {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    td[class=logo] {
+        padding: 25px 0 0 35px !important;
+    }
+
+    td[class=tagline] {
+        padding: 10px 0 0 35px !important;
+    }
+
+    td[class=h1] {
+        font-size: 28px !important;
+    }
+
+    .description {
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    img[class=h_logo] {
+        width: 40px;
+    }
+}
+</style>
+
+<body>
+<!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+                <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F7F6">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="padding-top: 20px">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620&amp;c_crid=logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/hunkerhaul.png" alt="Hunker" width="225" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1" bgcolor="#D8D8D8">
+                                            </td>
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center" class="h1" style="font-size:30px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;text-decoration: none;">
+                                                                                 Every Single Home, Furniture, and Decor Sale to Shop This Weekend
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            We'll cut right to the chase. You like sales? From outdoor furniture to cleaning supply clearance, here are the best of the best to hit up this weekend.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://www.hunker.com/13724006/best-home-decor-sales-of-the-week" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://www.hunker.com/13724006/best-home-decor-sales-of-the-week?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;" mp-encode="false">MORE SALES</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:16px;color:#7A7A7A;">
+                                                                            Our editorial team recommends the products we write about.<br class="hide">
+                                                                            Hunker may earn compensation through affiliate links in this story.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="30"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td>
+                                        <!-- Product 1 & 2 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/2POmbtF" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1076/0306-1.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/2POmbtF" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/2POmbtF" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/2POmbtF" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Target Cleaning</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                           If your local stores are running low, opt for buying online and picking up in-store instead. Target currently has a ton of sales on cleaning products from all brands.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://amzn.to/2IgSsWl" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1075/0306-2.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://amzn.to/2IgSsWl" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://amzn.to/2IgSsWl" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://amzn.to/2IgSsWl" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Amazon Top-Rated</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                          Trying to up your cooking skills? Amazon released the bestselling eco-friendly kitchen gear (and a bunch of it is on sale).
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Product 3 & 4 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/39rN8vg" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1074/0306-3.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/39rN8vg" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/39rN8vg" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/39rN8vg" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Modsy</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            If you're looking to redecorate but need a little extra help, Modsy's 3D interior design services are all 25% off this weekend.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/3apTDyH" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1073/0306-4.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/3apTDyH" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/3apTDyH" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/3apTDyH" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Gilt CBD Wellness</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            This weekend, Gilt (the online discount retailer) has a specialty shop filled with CBD-friendly wellness products.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Product 5 & 6 -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/2TwSsq8" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1072/0306-5.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/2TwSsq8" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/2TwSsq8" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                                <a href="https://fave.co/2TwSsq8" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Wayfair Dotted Line</strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            Got a junk drawer problem? Wayfair's affordable new storage and organization line your solution.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <a href="https://fave.co/2TFM14e" target="_blank">
+                                                                                <img width="250" alt="" style="display:block; height:auto;border:0;" border="0" src="https://cdn.maropost.com/pro/uploads/account_1351/1077/0306-6.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <div>
+                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:250px;" href="https://fave.co/2TFM14e" arcsize="0%" stroke="f" fillcolor="#333333"><w:anchorlock/><center><![endif]-->
+                                                                                            <a href="https://fave.co/2TFM14e" target="_blank" style="background-color:#333333;color:#ffffff;display:inline-block;font-family:'Helvetica',Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;text-decoration:none;letter-spacing:0.5px;width:250px;-webkit-text-size-adjust:none;">SHOP NOW</a>
+                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:20px;line-height:24px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom:15px">
+                                                                            <a href="https://fave.co/2TFM14e" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                <strong>Anthropologie </strong>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 10px;">
+                                                                            You can score discounts on all categories, but our favorite? 20% off the famous Anthro Volcano candles.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F7F6">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td height="30"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="{{viewInBrowserUrl}}" target="_blank" style="color:#222222;text-decoration: none;" mp-encode="false">View Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0;">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620&amp;c_crid=footer_logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="60" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0 40px 0">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://apple.news/TBagcKwvaSky69mjP3YECVw" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Apple_News.png" alt="Apple News" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px;">
+                                                                            <a href="https://flipboard.com/@Hunker_Home" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Flipboard.png" alt="Flipboard" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;;">
+                                                                            <a href="https://www.pinterest.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Pinterest.png" alt="Pinterest" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;">
+                                                                            <a href="https://www.facebook.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Facebook.png" alt="Facebook" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.instagram.com/hunkerhome/" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Instagram.png" alt="Instagram" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.youtube.com/c/hunkerhome" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Youtube.png" alt="YouTube" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.hunker.com%2Frss-feed%2Ffeedly%2Frecent" target="_blank" mp-encode="false"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Feedly.png" alt="Feedly" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                                <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620&amp;c_crid=footer_site" target="_blank" style="color: #aaaaaa;text-decoration:none;">Visit Hunker.com</a>  |  <a href="https://www.hunker.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620&amp;c_crid=footer_support#contact" target="_blank" style="color: #aaaaaa;text-decoration:none;">Support</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                    © {{now format='MMMM yyyy'}} Leaf Group Ltd. All Rights Reserved.
+                                                    <br>{{physicalAddress}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer_pad" align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;">You received this email because you are subscribed to the Hunker Newsletter.
+                                                    <br>If you prefer not to receive emails from Hunker you may <a href="{{unsubscribeUrl}}" target="_blank" style="color:#222222;text-decoration:none;" mp-encode="false">unsubscribe</a>.
+                                                    <br>
+                                                    Use of this web site constitutes acceptance of the Hunker <a href="https://www.hunker.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620&amp;c_crid=footer_terms" target="_blank" style="color:#222222;text-decoration:none;">Terms of Use</a> and <a href="https://www.hunker.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=deals_030620&amp;c_crid=footer_pp" target="_blank" style="color:#222222;text-decoration:none;">Privacy Policy</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+    </div>
+    
+    
+    
+</body>
+
+</html>

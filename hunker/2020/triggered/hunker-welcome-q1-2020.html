@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Hunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<meta name="x-apple-disable-message-reformatting">
+<link rel="shortcut icon" href="https://www.hunker.com/favicon.ico">
+<style type="text/css">
+/*
+    Created By: Thuan Hoang
+    Copyright 2019 LEAF GROUP
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #FFFFFF !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=quote] {
+        font-size: 22px !important;
+        line-height: 24px !important;
+    }
+
+    img[class=two_col_image] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    td[class=h1] {
+        text-align: center;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=two_col] {
+        width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    .mob_nopad {
+        padding-bottom: 0 !important;
+    }
+
+    .mob_nopad span {
+        font-size: 14px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 15px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    img[class=full_img] {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    td[class=hero_content] {
+        padding: 0 35px !important;
+    }
+
+    td[class=quote] {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    img[class=two_col_image] {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    td[class=h1] {
+        font-size: 28px !important;
+        text-align: center;
+    }
+
+    .description {
+        padding: 0 35px;
+        text-align: center;
+    }
+}
+</style>
+
+<body>
+<!--     {% assign doubleClick = "now" | date: "%Y%m%d%H%M" %} -->
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+                <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEECEA">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="padding-top: 20px">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="85" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="20"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/misc/welcome/house_hero.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="15"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                Welcome, Friend!
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="15"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="hero_content" style="padding: 0 50px;">
+                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            You did it! You’ve signed up for the Hunker newsletter. All that’s left to do now is sit back, relax, and let the goodness to come to you. Expect everything from the latest design news and trends to original features and home tours to exclusive behind-the-scenes peeks and perks just for subscribers.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;">
+                                                                            In the meantime, check out some of Hunker’s latest stories...
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="50"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td>
+                                        <!-- Tours -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td class="hide" height="50"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://www.hunker.com/tours?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=image1" target="_blank">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/misc/welcome/tour.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="https://www.hunker.com/tours?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=headline1" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                Tours
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            We'll take you inside creative homes and workspaces all over the globe — from rustic treehouses to Scandi-chic houses to colorful NYC studio apartments.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Features -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://www.hunker.com/features?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=image2" target="_blank">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/misc/welcome/feature.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="https://www.hunker.com/features?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=headline2" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                Features
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Sometimes, you gotta dig deeper. Our longreads cover everything from profiles of architects doing new and innovative things to interviews with Hollywood set designers to features dissecting the hows and whys of current trends.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- News -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://www.hunker.com/news?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=image3" target="_blank">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/misc/welcome/news.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="https://www.hunker.com/news?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=headline3" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                News
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Need to know about the newest IKEA collab? Want to learn about the latest in real estate? Into weird design stuff that might never exist but is cool anyhow? We got you covered.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Design & Shopping -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://www.hunker.com/design?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=image4" target="_blank">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/misc/welcome/design.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="https://www.hunker.com/design?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=headline4" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                Design
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Whether you're mid-reno or just looking to give your rental a little upgrade, we have resources to help you with everything from figuring out which countertops to put in your kitchen to which velvet chair is going to make your living room pop.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- DIY -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://www.hunker.com/diy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=image5" target="_blank">
+                                                                                <img class="two_col_image" width="300" alt="" style="display:block; height:auto;border:0;" border="0" src="http://img.stitchcdn.com/hunker/2019/misc/welcome/diy.jpg">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="25"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="two_col" width="300">
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td height="15"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="h1" style="font-size:32px; font-weight:bold;line-height:34px;font-family:'Times New Roman', Times, serif;color:#222222;padding-bottom: 25px;">
+                                                                            <a href="https://www.hunker.com/diy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=headline5" target="_blank" style="color:#222222;text-decoration:none;">
+                                                                                DIY
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="left" class="description" style="font-size:15px;font-family:'Helvetica',Arial,sans-serif;line-height:20px;color:#222222;padding-bottom: 25px;">
+                                                                            Whether we’re hacking our latest IKEA purchase or just trying to save a buck on trendy accessories, we’re all about getting crafty and making things by hand.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td height="35"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" class="description" style="font-size:18px; font-weight:bold;line-height:22px;font-family:'Times New Roman', Times, serif;color:#222222;">
+                                                                And, hey, while you’re at it, make sure to follow us on <a href="https://www.instagram.com/hunkerhome/" target="_blank" style="color:#F3CC4E;text-decoration: none;">Instagram</a>.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="http://img.stitchcdn.com/hunker/2019/misc/welcome/insta.jpg" width="640" alt="" style="display:block; height:auto;border:0;" border="0" class="full_img">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="hide" height="50"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEECEA">
+                    <tr>
+                        <td>
+                            <table width="640" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="min-width:640px;">
+                                <tr>
+                                    <td height="50"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px;font-family:'Helvetica',Arial,sans-serif;"><a href="{{viewInBrowserUrl}}" target="_blank" style="color:#222222;text-decoration: none;">View Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0;">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=footer_logo" target="_blank"><img src="http://img.stitchcdn.com/hunker/2017/template/Logo.png" alt="Hunker" width="60" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding:30px 0 40px 0">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://flipboard.com/@Hunker_Home" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Flipboard.png" alt="Flipboard" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px;">
+                                                                            <a href="https://www.pinterest.com/hunkerhome/" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Pinterest.png" alt="Pinterest" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0;">
+                                                                            <a href="https://www.facebook.com/hunkerhome/" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Facebook.png" alt="Facebook" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.instagram.com/hunkerhome/" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Instagram.png" alt="Instagram" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0 20px 0 0">
+                                                                            <a href="https://www.youtube.com/c/hunkerhome" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Youtube.png" alt="YouTube" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.hunker.com%2Frss-feed%2Ffeedly%2Frecent" target="_blank"><img src="http://img.stitchcdn.com/hunker/2019/misc/social/Feedly.png" alt="Feedly" height="15" style="display:block;height:auto;border:0;margin: 0 auto;"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                                <a href="https://www.hunker.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=footer_site" target="_blank" style="color: #aaaaaa;text-decoration:none;">Visit Hunker.com</a>  |  <a href="https://www.hunker.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=footer_support#contact" target="_blank" style="color: #aaaaaa;text-decoration:none;">Support</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;padding-bottom:30px;">
+                                                    © {{now format='yyyy'}} Leaf Group Ltd. All Rights Reserved.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer_pad" align="center" style="color: #aaaaaa;font-size:12px;font-family:'Helvetica',Arial,sans-serif;line-height:22px;">You received this email because you are subscribed to the Hunker Newsletter.
+                                                    <br>If you prefer not to receive emails from Hunker you may <a href="{{unsubscribeUrl}}" target="_blank" style="color:#222222;text-decoration:none;">unsubscribe</a>.
+                                                    <br>
+                                                    Use of this web site constitutes acceptance of the Hunker <a href="https://www.hunker.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=footer_terms" target="_blank" style="color:#222222;text-decoration:none;">Terms of Use</a> and <a href="https://www.hunker.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=hunker_welcome&amp;c_crid=footer_pp" target="_blank" style="color:#222222;text-decoration:none;">Privacy Policy</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+    </div>
+    
+    
+    
+</body>
+
+</html>
