@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<title>Sapling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="https://www.sapling.com/favicon_16.png">
+<style type="text/css">
+/*
+	Developed By: Hector Consuegra
+	Developed: Mar. 23, 2018	
+	Copyright 2018 LEAF GROUP - SAPLING
+*/
+body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+
+p {
+    Margin: 0px !important;
+    padding: 0px !important;
+}
+
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+
+td,
+a,
+span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+.em_white a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.gmailfix {
+    display: none;
+    display: none !important;
+}
+
+*[class=mob_show] {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    mso-hide: all;
+}
+
+/*Stylesheed for the devices width between 481px to 599px*/
+@media only screen and (min-width:481px) and (max-width:699px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=f11] {
+        font-size: 11px !important;
+    }
+
+    td[class=f18] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 28px 18px !important;
+    }
+
+    td[class=f18_2] {
+        font-size: 18px !important;
+    }
+
+    td[class=f21] {
+        font-size: 21px !important;
+    }
+
+    td[class=mob_title] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 35px 18px 22px 18px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 20px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=pad_header] {
+        padding: 0 20px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 12px !important;
+        padding-right: 20px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 12px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+}
+
+/*Stylesheed for the devices width between 0px to 480px*/
+@media only screen and (max-width:480px) {
+    *[class=wrapper] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    *[class=hide] {
+        display: none !important;
+    }
+
+    td[class=f11] {
+        font-size: 11px !important;
+    }
+
+    td[class=f18] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 28px 18px !important;
+    }
+
+    td[class=f18_2] {
+        font-size: 18px !important;
+    }
+
+    td[class=mob_title] {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        padding: 35px 18px 22px 18px !important;
+    }
+
+    td[class=mob_pad] {
+        padding: 0 12px !important;
+    }
+
+    td[class=h20] {
+        height: 30px !important;
+    }
+
+    table[class=nav] {
+        width: 263px !important;
+    }
+
+    td[class=pad_header] {
+        padding: 0 12px !important;
+    }
+
+    td[class=nav_item] {
+        font-size: 11px !important;
+        padding-right: 15px !important;
+    }
+
+    td[class=nav_item1] {
+        font-size: 11px !important;
+    }
+
+    table[class=w300] {
+        width: 300px !important;
+    }
+
+    *[class=mob_show] {
+        display: table !important;
+        max-height: none !important;
+        overflow: none !important;
+    }
+
+    td[class=pad20] {
+        padding: 35px 20px 30px !important;
+    }
+
+    td[class=footer_pad] {
+        padding: 15px 12px !important;
+    }
+
+    .em_hide {
+        display: none !important;
+    }
+}
+</style>
+
+<body>
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <!--[if gte mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+                <!--Full width table start-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fafafa">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="700" border="0" align="center" class="wrapper" cellpadding="0" cellspacing="0" style="table-layout:fixed;min-width:700px;">
+                                <tr>
+                                    <td class="hide" height="1" style="line-height:0px; font-size:0px;"><img src="http://img.stitchcdn.com/ehow/2016/triggered/social_nav/spacer.gif" height="1" width="700" alt="" style="display:block; width:700px; min-width:700px;" border="0"></td>
+                                </tr>
+                                <!-- Header start -->
+                                <tr>
+                                    <td class="pad_header" align="center" bgcolor="#fafafa" style="padding:0 50px;">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="right" bgcolor="#fafafa" style="font-size:11px;font-family:'Helvetica',Arial,sans-serif;padding-top:20px; padding-right:5px;"><a href="{{viewInBrowserUrl}}" target="_blank" style="color:#808080;">View in browser</a></td>
+                                            </tr>
+                                            <tr>
+                                                <!-- Logo -->
+                                                <td align="center" bgcolor="#fafafa" style="padding-top:10px;padding-bottom:0px;">
+                                                    <a href="https://www.sapling.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=logo" target="_blank"><img src="http://img.stitchcdn.com/sapling/2017/navigation/logo_big.png" alt="Sapling" width="160" style="display:block;height:auto;border:0;"></a>
+                                                </td>
+                                            </tr>
+                                            <!-- Navigation -->
+                                            <tr>
+                                                <td class="f11" align="center" style="font-size:14px;">
+                                                    <table width="364" class="nav" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Header end -->
+                                <tr>
+                                    <td class="mob_pad" style="padding:0 50px;">
+                                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <!-- Welcome Message -->
+                                            <tr>
+                                                <td style="padding:30px 0;">
+                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="mob_pad" style="padding:0 0px;">
+                                                                    <table width="100%" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:30px 0 30px;">
+                                                                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td class="f18_2" align="center" style="color: #383838;font-size:28px;font-family:'Helvetica',Arial,sans-serif;padding:0 20px;font-weight: 500;">We're so glad you've found us!</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td class="pad20" align="center" style="color: #383838;font-size: 16px;font-family:'Helvetica',Arial,sans-serif;line-height: 34px;font-weight: 300;padding:20px 30px 20px;">Thanks for signing up for Sapling's newsletter. Now that you're on our list, you'll be the first to get the latest info on how to save your money, when to spend your money, and how to finally get your life together.</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center" style="color: #383838;font-size: 16px;font-family:'Helvetica',Arial,sans-serif;font-weight:bold;"><i>Check out a few articles to get started:</i></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- //Welcome Message -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!-- Content start -->
+                                                            <!-- MAIN CONTENT PASTE -->
+                                                            <!--Content Section1 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13714028/building-wealth-takes-this-one-habit?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image1" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image1.jpg" width="600" alt="Building Wealth Takes This One Habit" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13714028/building-wealth-takes-this-one-habit?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline1" target="_blank" style="color:#383838;text-decoration:none;">Building Wealth Takes This One Habit</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13714028/building-wealth-takes-this-one-habit?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta1" arcsize="0%" stroke="f" fillcolor="#c4ce54"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13714028/building-wealth-takes-this-one-habit?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta1" target="_blank" style="background-color:#c4ce54;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">STRAIGHT TALK</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section1 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section2 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13711752/what-your-gift-giving-style-says-about-you?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image2" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image2.jpg" width="600" alt="What Your Gift Giving Style Says About You" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13711752/what-your-gift-giving-style-says-about-you?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline2" target="_blank" style="color:#383838;text-decoration:none;">What Your Gift Giving Style Says <br class="hide">
+                                                                                                About You</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13711752/what-your-gift-giving-style-says-about-you?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta2" arcsize="0%" stroke="f" fillcolor="#76b4c9"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13711752/what-your-gift-giving-style-says-about-you?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta2" target="_blank" style="background-color:#76b4c9;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">PERSONALITY INSIGHTS</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section2 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section3 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13713279/heres-your-game-plan-for-paying-down-debt?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image3" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image3.jpg" width="600" alt="Here's Your Game Plan for Paying Down Debt" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13713279/heres-your-game-plan-for-paying-down-debt?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline3" target="_blank" style="color:#383838;text-decoration:none;">Here's Your Game Plan for Paying <br class="hide">
+                                                                                                Down Debt</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13713279/heres-your-game-plan-for-paying-down-debt?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta3" arcsize="0%" stroke="f" fillcolor="#dbc39d"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13713279/heres-your-game-plan-for-paying-down-debt?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta3" target="_blank" style="background-color:#dbc39d;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">FINANCIAL FREEDOM</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section3 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section4 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13711075/match-up-with-your-perfect-side-hustle?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image4" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image4.jpg" width="600" alt="Match Up With Your Perfect Side Hustle" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13711075/match-up-with-your-perfect-side-hustle?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline4" target="_blank" style="color:#383838;text-decoration:none;">Match Up With Your Perfect Side Hustle</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13711075/match-up-with-your-perfect-side-hustle?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta4" arcsize="0%" stroke="f" fillcolor="#eeac4b"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13711075/match-up-with-your-perfect-side-hustle?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta4" target="_blank" style="background-color:#eeac4b;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">WHAT MOTIVATES YOU?</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section4 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section5 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13713294/we-may-have-found-a-vaccine-against-stress?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image5" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image5.jpg" width="600" alt="We May Have Found a Vaccine Against Stress" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13713294/we-may-have-found-a-vaccine-against-stress?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline5" target="_blank" style="color:#383838;text-decoration:none;">We May Have Found a Vaccine <br class="hide">
+                                                                                                Against Stress</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13713294/we-may-have-found-a-vaccine-against-stress?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta5" arcsize="0%" stroke="f" fillcolor="#c4ce54"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13713294/we-may-have-found-a-vaccine-against-stress?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta5" target="_blank" style="background-color:#c4ce54;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">AVOID BURNOUT</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section5 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section6 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13709697/financial-literacy-makes-your-old-age-more-chill?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image6" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image6.jpg" width="600" alt="Financial Literacy Makes Your Old Age More Chill" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13709697/financial-literacy-makes-your-old-age-more-chill?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline6" target="_blank" style="color:#383838;text-decoration:none;">Financial Literacy Makes Your Old Age More Chill</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13709697/financial-literacy-makes-your-old-age-more-chill?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta6" arcsize="0%" stroke="f" fillcolor="#76b4c9"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13709697/financial-literacy-makes-your-old-age-more-chill?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta6" target="_blank" style="background-color:#76b4c9;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">SECURE FUTURE</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section6 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section7 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13710078/reset-your-relationship-with-retail-therapy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image7" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image7.jpg" width="600" alt="Reset Your Relationship With Retail Therapy" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13710078/reset-your-relationship-with-retail-therapy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline7" target="_blank" style="color:#383838;text-decoration:none;">Reset Your Relationship With <br class="hide">
+                                                                                                Retail Therapy</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13710078/reset-your-relationship-with-retail-therapy?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta7" arcsize="0%" stroke="f" fillcolor="#dbc39d"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13710078/reset-your-relationship-with-retail-therapy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta7" target="_blank" style="background-color:#dbc39d;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">FIND JOY</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section7 -->
+                                                            <tr>
+                                                                <td height="30" class="h20" style="font-size:0;line-height:0;"></td>
+                                                            </tr>
+                                                            <!--Content Section8 -->
+                                                            <tr>
+                                                                <td style="box-shadow:1px 0 10px 0 rgba(0,0,0,.05);border:1px solid #eeeeee;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/13713915/how-to-accept-the-right-job-offer?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=image8" target="_blank"><img src="http://img.stitchcdn.com/sapling/2018/ad_hoc/welcome_q3_2018/image8.jpg" width="600" alt="How to Accept the Right Job Offer" style="display:block; height:auto;border:0;" border="0" class="wrapper"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="f18" align="center" style="font-size:30px;line-height:36px;font-family:'Helvetica',Arial,sans-serif;padding:20px 20px;">
+                                                                                            <a href="https://www.sapling.com/13713915/how-to-accept-the-right-job-offer?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=headline8" target="_blank" style="color:#383838;text-decoration:none;">How to Accept the Right Job Offer</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <!-- CTA -->
+                                                                                        <td align="center" style="padding-bottom:30px;">
+                                                                                            <table width="280" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <div>
+                                                                                                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:50px;v-text-anchor:middle;width:280px;" href="https://www.sapling.com/13713915/how-to-accept-the-right-job-offer?utm_source=newsletter&utm_medium=email&utm_campaign=sapling_welcome&c_crid=cta8" arcsize="0%" stroke="f" fillcolor="#eeac4b"><w:anchorlock/><center><![endif]-->
+                                                                                                            <a href="https://www.sapling.com/13713915/how-to-accept-the-right-job-offer?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=cta8" target="_blank" style="background-color:#eeac4b;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;letter-spacing:0.75px;width:280px;-webkit-text-size-adjust:none;text-transform:uppercase;">NEW ATTITUDE</a>
+                                                                                                            <!--[if mso]></center></v:roundrect><![endif]-->
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- /Content Section8 -->
+                                                            <!-- /MAIN CONTENT PASTE -->
+                                                            <!-- Content end -->
+                                                            <!-- Footer start -->
+                                                            <tr>
+                                                                <td height="30" style="font-size:0;line-height:0;"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" style="padding:30px 0;">
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="https://www.sapling.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=footer_logo" target="_blank"><img src="http://img.stitchcdn.com/sapling/2017/navigation/small_logo.png" alt="Sapling" width="74" style="display:block;height:auto;border:0;"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- Social Media -->
+                                                                        <tr>
+                                                                            <td align="center" style="padding:20px 0 30px;">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td align="center">
+                                                                                            <table width="156" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <a href="https://www.facebook.com/Saplingdotcom/" target="_blank"><img src="http://img.stitchcdn.com/sapling/2017/navigation/facebook.png" alt="Facebook" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                                    </td>
+                                                                                                    <td style="padding:0 28px;">
+                                                                                                        <a href="https://twitter.com/saplingdotcom" target="_blank"><img src="http://img.stitchcdn.com/sapling/2017/navigation/twitter.png" alt="Twitter" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <a href="https://www.instagram.com/saplingdotcom/" target="_blank"><img src="http://img.stitchcdn.com/sapling/2017/navigation/instagram.png" alt="Instagram" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                                    </td>
+                                                                                                    <td style="padding-left:28px;">
+                                                                                                        <a href="https://www.pinterest.com/saplingdotcom/" target="_blank"><img src="http://img.stitchcdn.com/sapling/2017/navigation/pinterest.png" alt="Pinterest" width="20" style="display:block;height:auto;border:0;"></a>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!-- Divider line -->
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td align="center" style="color: #808080;font-size:11px;font-family:'Helvetica',Arial,sans-serif;">
+                                                                                            <a href="https://www.sapling.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=footer_visit" target="_blank" style="color: #808080;text-decoration:none;">Visit Sapling.com</a>  |  <a href="https://www.sapling.com/about?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=footer_support#contact" target="_blank" style="color: #808080;text-decoration:none;">Support</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center" style="color:#808080;font-size:11px;line-height:24px;font-family:'Helvetica',Arial,sans-serif;padding-top:25px;">© {{now format='yyyy'}} Leaf Group Ltd. All Rights Reserved. 1655 26th St. Santa Monica, CA 90404</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="footer_pad" align="center" style="color:#808080;font-size:11px;line-height:14px;font-family:'Helvetica',Arial,sans-serif;padding:15px 25px;">You received this email because you are subscribed to the Sapling Newsletter. If you prefer not to receive emails from Sapling you may <a href="{{unsubscribeUrl}}" target="_blank" style="color:#7cccef;text-decoration:none;">unsubscribe</a>.</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="mob_pad" align="center" style="color:#808080;font-size:11px;line-height:14px;font-family:'Helvetica',Arial,sans-serif;padding:0 25px;">Use of this web site constitutes acceptance of the Sapling <a href="https://www.sapling.com/terms-of-use?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=footer_terms" target="_blank" style="color:#7cccef;text-decoration:none;">Terms of Use</a> and <a href="https://www.sapling.com/privacy-policy?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=sapling_welcome&amp;c_crid=footer_pp" target="_blank" style="color:#7cccef;text-decoration:none;">Privacy Policy</a>.</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Footer end -->
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- Content end -->
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Full width table End-->
+                            <div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
